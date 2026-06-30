@@ -103,9 +103,21 @@ See `results/REPORT.md` §38 for the full reproducibility appendix (every probe/
 
 15 LoRA adapters (r=16, attn+MLP) were trained — the actual weight changes (game-tick step-over, the
 flywheel rounds, UI cascade, oop/φ-expansion, arithmetic/DAgger studies). Each `adapter_model.safetensors`
-is ~477MB, so they are **not committed here** (exceed GitHub's 100MB/file limit). They are hosted separately
-(see release/Hub link once published); the **training recipes and data builders are in this repo** and can
-reproduce them on a CUDA box.
+is ~477MB, so they are **not committed here** (exceed GitHub's 100MB/file limit). They are hosted on the
+Hugging Face Hub:
+
+**🤗 [`nmk-kun/cwm-extended-adapters`](https://huggingface.co/nmk-kun/cwm-extended-adapters)**
+
+```python
+from peft import PeftModel
+from transformers import AutoModelForCausalLM
+base = AutoModelForCausalLM.from_pretrained("facebook/cwm")
+model = PeftModel.from_pretrained(base, "nmk-kun/cwm-extended-adapters",
+                                  subfolder="cwm_gametick_stepover")
+```
+
+The **training recipes and data builders are in this repo** and can reproduce them on a CUDA box
+(`upload_adapters_hf.py` re-uploads them).
 
 ---
 
