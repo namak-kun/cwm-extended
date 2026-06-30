@@ -1,0 +1,120 @@
+{
+  "model": "facebook/cwm",
+  "lora": null,
+  "n": 96,
+  "files": [
+    "data/uidom_eval.jsonl",
+    "data/uitick_eval.jsonl"
+  ],
+  "overall_exact": 0.8229,
+  "overall_field_f1": 0.9878,
+  "n_unparsed": 0,
+  "by_target": {
+    "uidom": {
+      "exact": 0.812,
+      "field_f1": 0.991,
+      "changed_field_acc": 0.875,
+      "delta_exact": 0.812,
+      "copy_field_f1": 0.907,
+      "n": 48
+    },
+    "uitick": {
+      "exact": 0.833,
+      "field_f1": 0.984,
+      "changed_field_acc": 1.0,
+      "delta_exact": 0.875,
+      "copy_field_f1": 0.7,
+      "n": 48
+    }
+  },
+  "fail_examples": {
+    "uidom": [
+      {
+        "action": {
+          "type": "select",
+          "id": "tab-7"
+        },
+        "f1": 0.9692,
+        "pred": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'ta",
+        "raw": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'tex",
+        "truth": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'ta"
+      },
+      {
+        "action": {
+          "type": "select",
+          "id": "tab-3"
+        },
+        "f1": 0.9184,
+        "pred": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'ta",
+        "raw": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'tex",
+        "truth": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'ta"
+      },
+      {
+        "action": {
+          "type": "select",
+          "id": "tab-8"
+        },
+        "f1": 0.9726,
+        "pred": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'ta",
+        "raw": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'tex",
+        "truth": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'ta"
+      },
+      {
+        "action": {
+          "type": "select",
+          "id": "tab-3"
+        },
+        "f1": 0.9385,
+        "pred": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'true'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'tag",
+        "raw": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'true'}, 'text",
+        "truth": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'ta"
+      }
+    ],
+    "uitick": [
+      {
+        "action": {
+          "type": "input",
+          "target": "email",
+          "value": "a@b.com"
+        },
+        "f1": 0.8333,
+        "pred": "{'fields': {'email': 'a@b.com', 'password': 'longenough1', 'confirm': ''}, 'errors': {'email': 'invalid', 'password': 'too_short', 'confirm': 'mismatch'}, 'can_submit': False}",
+        "raw": "{'fields': {'email': 'a@b.com', 'password': 'longenough1', 'confirm': ''}, 'errors': {'email': 'invalid', 'password': 'too_short', 'confirm': 'mismatch'}, 'can_submit': False}",
+        "truth": "{'fields': {'email': 'a@b.com', 'password': 'longenough1', 'confirm': ''}, 'errors': {'confirm': 'mismatch'}, 'can_submit': False}"
+      },
+      {
+        "action": {
+          "type": "input",
+          "target": "confirm",
+          "value": "short"
+        },
+        "f1": 0.9091,
+        "pred": "{'fields': {'email': 'user@site.org', 'password': 'short', 'confirm': 'short'}, 'errors': {'password': 'too_short', 'confirm': 'mismatch'}, 'can_submit': False}",
+        "raw": "{'fields': {'email': 'user@site.org', 'password': 'short', 'confirm': 'short'}, 'errors': {'password': 'too_short', 'confirm': 'mismatch'}, 'can_submit': False}",
+        "truth": "{'fields': {'email': 'user@site.org', 'password': 'short', 'confirm': 'short'}, 'errors': {'password': 'too_short'}, 'can_submit': False}"
+      },
+      {
+        "action": {
+          "type": "input",
+          "target": "password",
+          "value": "abcdefgh"
+        },
+        "f1": 0.9231,
+        "pred": "{'fields': {'email': 'bad', 'password': 'abcdefgh', 'confirm': ''}, 'errors': {'email': 'invalid', 'password': 'too_short', 'confirm': 'mismatch'}, 'can_submit': False}",
+        "raw": "{'fields': {'email': 'bad', 'password': 'abcdefgh', 'confirm': ''}, 'errors': {'email': 'invalid', 'password': 'too_short', 'confirm': 'mismatch'}, 'can_submit': False}",
+        "truth": "{'fields': {'email': 'bad', 'password': 'abcdefgh', 'confirm': ''}, 'errors': {'email': 'invalid', 'confirm': 'mismatch'}, 'can_submit': False}"
+      },
+      {
+        "action": {
+          "type": "input",
+          "target": "email",
+          "value": "a@b.com"
+        },
+        "f1": 0.9231,
+        "pred": "{'fields': {'email': 'a@b.com', 'password': 'short', 'confirm': 'abcdefgh'}, 'errors': {'email': 'invalid', 'password': 'too_short', 'confirm': 'mismatch'}, 'can_submit': False}",
+        "raw": "{'fields': {'email': 'a@b.com', 'password': 'short', 'confirm': 'abcdefgh'}, 'errors': {'email': 'invalid', 'password': 'too_short', 'confirm': 'mismatch'}, 'can_submit': False}",
+        "truth": "{'fields': {'email': 'a@b.com', 'password': 'short', 'confirm': 'abcdefgh'}, 'errors': {'password': 'too_short', 'confirm': 'mismatch'}, 'can_submit': False}"
+      }
+    ]
+  }
+}

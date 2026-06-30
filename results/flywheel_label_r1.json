@@ -1,0 +1,30 @@
+{
+  "label_fdm": "adapters/cwm_gametick_stepover",
+  "n_transitions": 490,
+  "idm_action_recovery_acc": 0.7245,
+  "by_event_type": {
+    "move_only": {
+      "acc": 0.759,
+      "n": 232
+    },
+    "stomp": {
+      "acc": 0.757,
+      "n": 74
+    },
+    "contact": {
+      "acc": 0.657,
+      "n": 216
+    },
+    "death": {
+      "acc": 0.757,
+      "n": 74
+    }
+  },
+  "n_kept_after_margin": 490,
+  "margin_min": 0.0,
+  "kept_recovery_acc": 0.7245,
+  "n_idm_examples": 490,
+  "n_oracle_examples": 490,
+  "mean_margin": 2.351,
+  "frac_zero_margin": 0.343
+}

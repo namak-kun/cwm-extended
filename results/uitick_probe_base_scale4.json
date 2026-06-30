@@ -1,0 +1,177 @@
+{
+  "model": "facebook/cwm",
+  "lora": null,
+  "n": 80,
+  "seed": 999,
+  "exact_match": 0.725,
+  "field_f1": 0.9286,
+  "by_app": {
+    "counter": {
+      "exact": 0.95,
+      "field_f1": 0.967,
+      "n": 20
+    },
+    "todo": {
+      "exact": 0.9,
+      "field_f1": 0.996,
+      "n": 20
+    },
+    "form": {
+      "exact": 0.6,
+      "field_f1": 0.961,
+      "n": 20
+    },
+    "cart": {
+      "exact": 0.45,
+      "field_f1": 0.791,
+      "n": 20
+    }
+  },
+  "examples": [
+    {
+      "app": "counter",
+      "event": {
+        "type": "dec"
+      },
+      "exact": true,
+      "f1": 1.0,
+      "pred": {
+        "count": 0,
+        "step": 3,
+        "is_zero": true
+      },
+      "truth": {
+        "count": 0,
+        "step": 3,
+        "is_zero": true
+      }
+    },
+    {
+      "app": "counter",
+      "event": {
+        "type": "dec"
+      },
+      "exact": false,
+      "f1": 0.3333,
+      "pred": {
+        "count": 0,
+        "step": 3,
+        "is_zero": true
+      },
+      "truth": {
+        "count": -3,
+        "step": 3,
+        "is_zero": false
+      }
+    },
+    {
+      "app": "counter",
+      "event": {
+        "type": "inc"
+      },
+      "exact": true,
+      "f1": 1.0,
+      "pred": {
+        "count": 3,
+        "step": 3,
+        "is_zero": false
+      },
+      "truth": {
+        "count": 3,
+        "step": 3,
+        "is_zero": false
+      }
+    },
+    {
+      "app": "counter",
+      "event": {
+        "type": "inc"
+      },
+      "exact": true,
+      "f1": 1.0,
+      "pred": {
+        "count": 2,
+        "step": 1,
+        "is_zero": false
+      },
+      "truth": {
+        "count": 2,
+        "step": 1,
+        "is_zero": false
+      }
+    },
+    {
+      "app": "counter",
+      "event": {
+        "type": "reset"
+      },
+      "exact": true,
+      "f1": 1.0,
+      "pred": {
+        "count": 0,
+        "step": 1,
+        "is_zero": true
+      },
+      "truth": {
+        "count": 0,
+        "step": 1,
+        "is_zero": true
+      }
+    },
+    {
+      "app": "counter",
+      "event": {
+        "type": "inc"
+      },
+      "exact": true,
+      "f1": 1.0,
+      "pred": {
+        "count": -1,
+        "step": 1,
+        "is_zero": false
+      },
+      "truth": {
+        "count": -1,
+        "step": 1,
+        "is_zero": false
+      }
+    },
+    {
+      "app": "counter",
+      "event": {
+        "type": "set_step",
+        "value": 1
+      },
+      "exact": true,
+      "f1": 1.0,
+      "pred": {
+        "count": 1,
+        "step": 1,
+        "is_zero": false
+      },
+      "truth": {
+        "count": 1,
+        "step": 1,
+        "is_zero": false
+      }
+    },
+    {
+      "app": "counter",
+      "event": {
+        "type": "reset"
+      },
+      "exact": true,
+      "f1": 1.0,
+      "pred": {
+        "count": 0,
+        "step": 2,
+        "is_zero": true
+      },
+      "truth": {
+        "count": 0,
+        "step": 2,
+        "is_zero": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "model": "/home/t-nagupta/.cache/huggingface/hub/models--facebook--cwm/snapshots/1b572b04e7f9613bb8ea902fedff4a1ed887c573/",
+  "results": {
+    "C_loop": {
+      "lang": "c",
+      "true_final": 56,
+      "cwm_final": 56,
+      "match": true,
+      "n_pred_frames": 18
+    },
+    "C_array": {
+      "lang": "c",
+      "true_final": 8,
+      "cwm_final": 8,
+      "match": true,
+      "n_pred_frames": 13
+    },
+    "py_multiproc": {
+      "lang": "py",
+      "true_final": 30,
+      "cwm_final": "<multiprocessing.context.ForkContext object>",
+      "match": false,
+      "n_pred_frames": 59
+    },
+    "py_threading": {
+      "lang": "py",
+      "true_final": 6,
+      "cwm_final": "None",
+      "match": false,
+      "n_pred_frames": 71
+    },
+    "py_numpy_small": {
+      "lang": "py",
+      "true_final": 12,
+      "cwm_final": 12,
+      "match": true,
+      "n_pred_frames": 9
+    },
+    "py_numpy_big": {
+      "lang": "py",
+      "true_final": 5445,
+      "cwm_final": "\"(array([[ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9],\\n       [10, 11, 12, 13, 14, 15, 16, 17, 18, 19],\\n       [20, 21, 22, 23, 24, 25, 26, 27, 28, 29],\\n       [30, 31, 32, 33, 34, 35, 36, 37, 38, 39],\\n       [40, 41, 42, 43, 44, 45, 46, 47, 48, ",
+      "match": false,
+      "n_pred_frames": 10
+    }
+  },
+  "elapsed_sec": 132.5
+}

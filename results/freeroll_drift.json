@@ -1,0 +1,19 @@
+{
+  "bucket": "oop",
+  "n": 25,
+  "seed": 999,
+  "by_adapter": {
+    "base": {
+      "free_roll_frame_acc": 0.0333,
+      "fully_correct_rollout_rate": 0.0,
+      "per_prog_min": 0.025,
+      "per_prog_max": 0.041
+    },
+    "adapters/cwm_dagger_drift": {
+      "free_roll_frame_acc": 0.9324,
+      "fully_correct_rollout_rate": 0.0,
+      "per_prog_min": 0.902,
+      "per_prog_max": 0.957
+    }
+  }
+}

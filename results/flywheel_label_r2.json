@@ -1,0 +1,30 @@
+{
+  "label_fdm": "adapters/cwm_fdm_idm_r1",
+  "n_transitions": 795,
+  "idm_action_recovery_acc": 0.717,
+  "by_event_type": {
+    "contact": {
+      "acc": 0.72,
+      "n": 361
+    },
+    "move_only": {
+      "acc": 0.709,
+      "n": 378
+    },
+    "stomp": {
+      "acc": 0.716,
+      "n": 95
+    },
+    "death": {
+      "acc": 0.716,
+      "n": 95
+    }
+  },
+  "n_kept_after_margin": 495,
+  "margin_min": 1.0,
+  "kept_recovery_acc": 0.9919,
+  "n_idm_examples": 495,
+  "n_oracle_examples": 495,
+  "mean_margin": 2.414,
+  "frac_zero_margin": 0.377
+}

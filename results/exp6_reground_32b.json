@@ -1,0 +1,38 @@
+{
+  "model": "vllm:Qwen2.5-Coder-32B-Instruct",
+  "n_games": 24,
+  "horizon": 20,
+  "k": {
+    "1": {
+      "mean_exact": 0.769,
+      "mean_field": 0.969,
+      "engine_calls_per_step": 1.0
+    },
+    "2": {
+      "mean_exact": 0.694,
+      "mean_field": 0.958,
+      "engine_calls_per_step": 0.5
+    },
+    "3": {
+      "mean_exact": 0.64,
+      "mean_field": 0.949,
+      "engine_calls_per_step": 0.333
+    },
+    "5": {
+      "mean_exact": 0.548,
+      "mean_field": 0.935,
+      "engine_calls_per_step": 0.2
+    },
+    "10": {
+      "mean_exact": 0.479,
+      "mean_field": 0.92,
+      "engine_calls_per_step": 0.1
+    },
+    "9999": {
+      "mean_exact": 0.365,
+      "mean_field": 0.902,
+      "engine_calls_per_step": 0.0
+    }
+  },
+  "elapsed_sec": 559.7
+}

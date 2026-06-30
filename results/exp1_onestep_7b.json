@@ -1,0 +1,70 @@
+{
+  "model": "vllm:Qwen2.5-Coder-7B-Instruct",
+  "n_games_per_mode": 30,
+  "horizon": 12,
+  "one_step": {
+    "semantic|code=on": {
+      "exact": 0.606,
+      "field_acc": 0.942,
+      "valid": 1,
+      "n": 360
+    },
+    "semantic|code=OFF": {
+      "exact": 0.289,
+      "field_acc": 0.903,
+      "valid": 1,
+      "n": 360
+    },
+    "random|code=on": {
+      "exact": 0.558,
+      "field_acc": 0.941,
+      "valid": 1,
+      "n": 360
+    },
+    "random|code=OFF": {
+      "exact": 0.047,
+      "field_acc": 0.823,
+      "valid": 1,
+      "n": 360
+    },
+    "misleading|code=on": {
+      "exact": 0.372,
+      "field_acc": 0.9,
+      "valid": 1,
+      "n": 360
+    },
+    "misleading|code=OFF": {
+      "exact": 0.022,
+      "field_acc": 0.79,
+      "valid": 1,
+      "n": 360
+    },
+    "semantic|COPY_baseline": {
+      "exact": 0.039,
+      "field_acc": 0.847
+    },
+    "random|COPY_baseline": {
+      "exact": 0.075,
+      "field_acc": 0.854
+    },
+    "misleading|COPY_baseline": {
+      "exact": 0.111,
+      "field_acc": 0.87
+    }
+  },
+  "counterfactual": {
+    "semantic": {
+      "action_exact_rate": 0.667,
+      "sensitivity_ratio": 0.992
+    },
+    "random": {
+      "action_exact_rate": 0.667,
+      "sensitivity_ratio": 1.053
+    },
+    "misleading": {
+      "action_exact_rate": 0.492,
+      "sensitivity_ratio": 0.961
+    }
+  },
+  "elapsed_sec": 60.6
+}

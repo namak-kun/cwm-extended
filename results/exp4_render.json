@@ -1,0 +1,19 @@
+{
+  "seed": 4321,
+  "horizon": 24,
+  "mean_abs_pixel_error": {
+    "pure": 0.0,
+    "anim": 1.95,
+    "camera": 8.678,
+    "trail": 1.185,
+    "anim_aug": 0.0,
+    "camera_aug": 0.0,
+    "trail_aug": 0.0
+  },
+  "interpretation": {
+    "pure_sufficient": true,
+    "anim_needs_phase": true,
+    "camera_needs_history": true,
+    "trail_needs_history": true
+  }
+}

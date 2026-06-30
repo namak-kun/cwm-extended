@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Cascade Profile Form</title></head>
+<body>
+  <form id="profileForm">
+    <div class="form-control" data-field="username"><label>Username</label><input id="username"><small>Error message</small></div>
+    <div class="form-control" data-field="email"><label>Email</label><input id="email"><small>Error message</small></div>
+    <div class="form-control" data-field="password"><label>Password</label><input id="password" type="password"><small>Error message</small></div>
+    <div class="form-control" data-field="password2"><label>Confirm Password</label><input id="password2" type="password"><small>Error message</small></div>
+    <div class="form-control" data-field="age"><label>Age</label><input id="age"><small>Error message</small></div>
+    <div class="form-control" data-field="guardianEmail"><label>Guardian Email</label><input id="guardianEmail"><small>Error message</small></div>
+    <div class="form-control" data-field="accountType"><label>Account Type</label><select id="accountType"><option value="personal">Personal</option><option value="business">Business</option></select><small>Error message</small></div>
+    <div class="form-control" data-field="companyName"><label>Company</label><input id="companyName"><small>Error message</small></div>
+    <div class="form-control" data-field="vatId"><label>VAT ID</label><input id="vatId"><small>Error message</small></div>
+    <div class="form-control" data-field="country"><label>Country</label><select id="country"><option value="">Choose country</option><option value="USA">USA</option><option value="Canada">Canada</option><option value="Other">Other</option></select><small>Error message</small></div>
+    <div class="form-control" data-field="region"><label>Region</label><select id="region"></select><small>Error message</small></div>
+    <div class="form-control" data-field="city"><label>City</label><select id="city"></select><small>Error message</small></div>
+    <div class="form-control" data-field="newsletter"><label><input id="newsletter" type="checkbox"> Newsletter</label><small>Error message</small></div>
+    <div class="form-control" data-field="terms"><label><input id="terms" type="checkbox"> Terms</label><small>Error message</small></div>
+    <button id="submitBtn" type="submit" disabled>Submit</button>
+    <ol id="errorSummary"></ol>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+{
+  "tag": "base_k0",
+  "app": "tabs",
+  "steps": 12,
+  "per_step_ok": [
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "reground_k": 0,
+  "events": [
+    {
+      "type": "select",
+      "id": "tab-0"
+    },
+    {
+      "type": "select",
+      "id": "tab-5"
+    },
+    {
+      "type": "select",
+      "id": "tab-2"
+    },
+    {
+      "type": "select",
+      "id": "tab-1"
+    },
+    {
+      "type": "select",
+      "id": "tab-1"
+    },
+    {
+      "type": "select",
+      "id": "tab-1"
+    },
+    {
+      "type": "select",
+      "id": "tab-5"
+    },
+    {
+      "type": "select",
+      "id": "tab-0"
+    },
+    {
+      "type": "select",
+      "id": "tab-5"
+    },
+    {
+      "type": "select",
+      "id": "tab-5"
+    },
+    {
+      "type": "select",
+      "id": "tab-4"
+    },
+    {
+      "type": "select",
+      "id": "tab-0"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "model": "facebook/cwm",
+  "lora": "adapters/cwm_cascade",
+  "n": 80,
+  "files": [
+    "data/uitrans_vanilla.jsonl"
+  ],
+  "overall_exact": 0.35,
+  "overall_field_f1": 0.7599,
+  "n_unparsed": 0,
+  "by_target": {
+    "vanilla": {
+      "exact": 0.35,
+      "field_f1": 0.76,
+      "changed_field_acc": 0.656,
+      "delta_exact": 0.35,
+      "copy_field_f1": 0.64,
+      "n": 80
+    }
+  },
+  "fail_examples": {
+    "vanilla": [
+      {
+        "action": {
+          "field": "username",
+          "type": "input",
+          "value": ""
+        },
+        "f1": 0.8333,
+        "pred": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Passwords do not match', 'status': 'error'}, 'username': {'message': 'Username is required', 'status': 'error'}",
+        "raw": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Passwords d",
+        "truth": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Username must be at least 3 characters', '"
+      },
+      {
+        "action": {
+          "field": "username",
+          "type": "input",
+          "value": "Nora"
+        },
+        "f1": 0.5,
+        "pred": "{'controls': {'email': {'message': 'Error message', 'status': ''}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'message': 'Error message', 'status': 'success'}}, 'fields': {'email': '', 'password': '', 'password2': '',",
+        "raw": "{'controls': {'email': {'message': 'Error message', 'status': ''}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'messag",
+        "truth": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Error message', 'status': 'success'}}, 'fi"
+      },
+      {
+        "action": {
+          "field": "email",
+          "type": "input",
+          "value": "not-email"
+        },
+        "f1": 0.5,
+        "pred": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'message': 'Error message', 'status': ''}}, 'fields': {'email': 'not-email', 'password': '', 'pas",
+        "raw": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username'",
+        "truth": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Username must be at least 3 characters', '"
+      },
+      {
+        "action": {
+          "field": "email",
+          "type": "input",
+          "value": "nora@example.com"
+        },
+        "f1": 0.75,
+        "pred": "{'controls': {'email': {'message': 'Error message', 'status': 'success'}, 'password': {'message': 'Error message', 'status': 'error'}, 'password2': {'message': 'Error message', 'status': 'error'}, 'username': {'message': 'Error message', 'status': 'error'}}, 'fields': {'email': 'nora@example.com', '",
+        "raw": "{'controls': {'email': {'message': 'Error message', 'status': 'success'}, 'password': {'message': 'Error message', 'status': 'error'}, 'password2': {'message': 'Error message', 'status': 'error'}, 'us",
+        "truth": "{'controls': {'email': {'message': 'Error message', 'status': 'success'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Username must be at least 3 characters', 'sta"
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "model": "facebook/cwm",
+  "lora": "adapters/cwm_heldapp",
+  "n": 16,
+  "files": [
+    "data/uidom_togglelist_heldout.jsonl"
+  ],
+  "overall_exact": 0.5625,
+  "overall_field_f1": 0.9839,
+  "n_unparsed": 0,
+  "by_target": {
+    "uidom": {
+      "exact": 0.562,
+      "field_f1": 0.984,
+      "changed_field_acc": 0.781,
+      "delta_exact": 0.562,
+      "copy_field_f1": 0.916,
+      "n": 16
+    }
+  },
+  "fail_examples": {
+    "uidom": [
+      {
+        "action": {
+          "type": "toggle",
+          "id": "item-5"
+        },
+        "f1": 0.9643,
+        "pred": "{'tag': 'ul', 'attrs': {}, 'children': [{'tag': 'li', 'id': 'item-0', 'attrs': {'data-done': 'false'}, 'text': 'task0'}, {'tag': 'li', 'id': 'item-1', 'attrs': {'data-done': 'true'}, 'text': 'task1'}, {'tag': 'li', 'id': 'item-2', 'attrs': {'data-done': 'false'}, 'text': 'task2'}, {'tag': 'li', 'id'",
+        "raw": "{'tag': 'ul', 'attrs': {}, 'children': [{'tag': 'li', 'id': 'item-0', 'attrs': {'data-done': 'false'}, 'text': 'task0'}, {'tag': 'li', 'id': 'item-1', 'attrs': {'data-done': 'true'}, 'text': 'task1'},",
+        "truth": "{'tag': 'ul', 'attrs': {}, 'children': [{'tag': 'li', 'id': 'item-0', 'attrs': {'data-done': 'false'}, 'text': 'task0'}, {'tag': 'li', 'id': 'item-1', 'attrs': {'data-done': 'true'}, 'text': 'task1'}, {'tag': 'li', 'id': 'item-2', 'attrs': {'data-done': 'false'}, 'text': 'task2'}, {'tag': 'li', 'id'"
+      },
+      {
+        "action": {
+          "type": "toggle",
+          "id": "item-5"
+        },
+        "f1": 0.9722,
+        "pred": "{'tag': 'ul', 'attrs': {}, 'children': [{'tag': 'li', 'id': 'item-0', 'attrs': {'data-done': 'false'}, 'text': 'task0'}, {'tag': 'li', 'id': 'item-1', 'attrs': {'data-done': 'true'}, 'text': 'task1'}, {'tag': 'li', 'id': 'item-2', 'attrs': {'data-done': 'false'}, 'text': 'task2'}, {'tag': 'li', 'id'",
+        "raw": "{'tag': 'ul', 'attrs': {}, 'children': [{'tag': 'li', 'id': 'item-0', 'attrs': {'data-done': 'false'}, 'text': 'task0'}, {'tag': 'li', 'id': 'item-1', 'attrs': {'data-done': 'true'}, 'text': 'task1'},",
+        "truth": "{'tag': 'ul', 'attrs': {}, 'children': [{'tag': 'li', 'id': 'item-0', 'attrs': {'data-done': 'false'}, 'text': 'task0'}, {'tag': 'li', 'id': 'item-1', 'attrs': {'data-done': 'true'}, 'text': 'task1'}, {'tag': 'li', 'id': 'item-2', 'attrs': {'data-done': 'false'}, 'text': 'task2'}, {'tag': 'li', 'id'"
+      },
+      {
+        "action": {
+          "type": "toggle",
+          "id": "item-2"
+        },
+        "f1": 0.9583,
+        "pred": "{'tag': 'ul', 'attrs': {}, 'children': [{'tag': 'li', 'id': 'item-0', 'attrs': {'data-done': 'false'}, 'text': 'task0'}, {'tag': 'li', 'id': 'item-1', 'attrs': {'data-done': 'false'}, 'text': 'task1'}, {'tag': 'li', 'id': 'item-2', 'attrs': {'data-done': 'false'}, 'text': 'task2'}, {'tag': 'li', 'id",
+        "raw": "{'tag': 'ul', 'attrs': {}, 'children': [{'tag': 'li', 'id': 'item-0', 'attrs': {'data-done': 'false'}, 'text': 'task0'}, {'tag': 'li', 'id': 'item-1', 'attrs': {'data-done': 'false'}, 'text': 'task1'}",
+        "truth": "{'tag': 'ul', 'attrs': {}, 'children': [{'tag': 'li', 'id': 'item-0', 'attrs': {'data-done': 'false'}, 'text': 'task0'}, {'tag': 'li', 'id': 'item-1', 'attrs': {'data-done': 'false'}, 'text': 'task1'}, {'tag': 'li', 'id': 'item-2', 'attrs': {'data-done': 'false'}, 'text': 'task2'}, {'tag': 'li', 'id"
+      },
+      {
+        "action": {
+          "type": "toggle",
+          "id": "item-1"
+        },
+        "f1": 0.95,
+        "pred": "{'tag': 'ul', 'attrs': {}, 'children': [{'tag': 'li', 'id': 'item-0', 'attrs': {'data-done': 'false'}, 'text': 'task0'}, {'tag': 'li', 'id': 'item-1', 'attrs': {'data-done': 'false'}, 'text': 'task1'}, {'tag': 'li', 'id': 'item-2', 'attrs': {'data-done': 'false'}, 'text': 'task2'}, {'tag': 'li', 'id",
+        "raw": "{'tag': 'ul', 'attrs': {}, 'children': [{'tag': 'li', 'id': 'item-0', 'attrs': {'data-done': 'false'}, 'text': 'task0'}, {'tag': 'li', 'id': 'item-1', 'attrs': {'data-done': 'false'}, 'text': 'task1'}",
+        "truth": "{'tag': 'ul', 'attrs': {}, 'children': [{'tag': 'li', 'id': 'item-0', 'attrs': {'data-done': 'false'}, 'text': 'task0'}, {'tag': 'li', 'id': 'item-1', 'attrs': {'data-done': 'false'}, 'text': 'task1'}, {'tag': 'li', 'id': 'item-2', 'attrs': {'data-done': 'false'}, 'text': 'task2'}, {'tag': 'li', 'id"
+      }
+    ]
+  }
+}

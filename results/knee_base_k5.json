@@ -1,0 +1,24 @@
+{
+  "tag": "base_k5",
+  "app": "togglelist",
+  "lora": null,
+  "n_roll": 24,
+  "steps": 8,
+  "reground_k": 5,
+  "mean_step_acc": 0.4792,
+  "ci95_over_rollouts": [
+    0.396,
+    0.562
+  ],
+  "per_step_acc": [
+    0.708,
+    0.458,
+    0.542,
+    0.292,
+    0.333,
+    0.667,
+    0.458,
+    0.375
+  ],
+  "all_steps_correct_rate": 0
+}

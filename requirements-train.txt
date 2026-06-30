@@ -1,0 +1,8 @@
+# Training stack (the separate .venv environment used for LoRA SFT).
+# Kept separate from requirements.txt because vLLM and the trainer pin
+# slightly different torch builds. Install in its own venv.
+torch==2.12.1
+transformers==5.12.1
+peft==0.19.1
+accelerate==1.14.0
+datasets==5.0.0

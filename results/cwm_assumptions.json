@@ -1,0 +1,64 @@
+{
+  "model": "/home/t-nagupta/.cache/huggingface/hub/models--facebook--cwm/snapshots/1b572b04e7f9613bb8ea902fedff4a1ed887c573/",
+  "by_program": {
+    "counter_N30": {
+      "n_true": 127,
+      "n_pred": 127,
+      "teacher_acc": 1,
+      "student_free_acc": 1,
+      "a2_valid_rate": 0.984,
+      "first_invalid_depth": 0
+    },
+    "grid_N24": {
+      "n_true": 198,
+      "n_pred": 198,
+      "teacher_acc": 1,
+      "student_free_acc": 1,
+      "a2_valid_rate": 0.99,
+      "first_invalid_depth": 0
+    },
+    "list_N30": {
+      "n_true": 142,
+      "n_pred": 142,
+      "teacher_acc": 1,
+      "student_free_acc": 1,
+      "a2_valid_rate": 0.986,
+      "first_invalid_depth": 0
+    }
+  },
+  "A3_privilege_gap_by_band": {
+    "1-10": {
+      "teacher": 1,
+      "student": 1,
+      "gap": 0
+    },
+    "11-25": {
+      "teacher": 1,
+      "student": 1,
+      "gap": 0
+    },
+    "26-50": {
+      "teacher": 1,
+      "student": 1,
+      "gap": 0
+    },
+    "51-100": {
+      "teacher": 1,
+      "student": 1,
+      "gap": 0
+    },
+    "100+": {
+      "teacher": 1,
+      "student": 1,
+      "gap": 0
+    }
+  },
+  "A2_valid_by_band": {
+    "1-10": 0.818,
+    "11-25": 1,
+    "26-50": 1,
+    "51-100": 1,
+    "100+": 1
+  },
+  "elapsed_sec": 1011.7
+}

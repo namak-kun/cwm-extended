@@ -1,0 +1,665 @@
+{
+  "source": "OPS = ['pop', 'pop', 'push', 'pop', 'rot', 'pop']\n\ndef run():  # << START_OF_TRACE\n    stack = [1, 2, 3]\n    total = 0\n    for op in OPS:\n        if op == \"push\":\n            stack.append((total + 1) % 10)\n        elif op == \"pop\":\n            if stack:\n                total += stack.pop()\n        elif op == \"rot\":\n            if len(stack) > 1:\n                stack = stack[1:] + stack[:1]\n    return (stack, total)\n\nrun()\n",
+  "gt": [
+    [
+      "call",
+      "def run():  # << START_OF_TRACE",
+      {},
+      null
+    ],
+    [
+      "line",
+      "    stack = [1, 2, 3]",
+      {},
+      null
+    ],
+    [
+      "line",
+      "    total = 0",
+      {
+        "stack": "[1, 2, 3]"
+      },
+      null
+    ],
+    [
+      "line",
+      "    for op in OPS:",
+      {
+        "stack": "[1, 2, 3]",
+        "total": "0"
+      },
+      null
+    ],
+    [
+      "line",
+      "        if op == \"push\":",
+      {
+        "stack": "[1, 2, 3]",
+        "total": "0",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "        elif op == \"pop\":",
+      {
+        "stack": "[1, 2, 3]",
+        "total": "0",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "            if stack:",
+      {
+        "stack": "[1, 2, 3]",
+        "total": "0",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "                total += stack.pop()",
+      {
+        "stack": "[1, 2, 3]",
+        "total": "0",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "    for op in OPS:",
+      {
+        "stack": "[1, 2]",
+        "total": "3",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "        if op == \"push\":",
+      {
+        "stack": "[1, 2]",
+        "total": "3",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "        elif op == \"pop\":",
+      {
+        "stack": "[1, 2]",
+        "total": "3",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "            if stack:",
+      {
+        "stack": "[1, 2]",
+        "total": "3",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "                total += stack.pop()",
+      {
+        "stack": "[1, 2]",
+        "total": "3",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "    for op in OPS:",
+      {
+        "stack": "[1]",
+        "total": "5",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "        if op == \"push\":",
+      {
+        "stack": "[1]",
+        "total": "5",
+        "op": "'push'"
+      },
+      null
+    ],
+    [
+      "line",
+      "            stack.append((total + 1) % 10)",
+      {
+        "stack": "[1]",
+        "total": "5",
+        "op": "'push'"
+      },
+      null
+    ],
+    [
+      "line",
+      "    for op in OPS:",
+      {
+        "stack": "[1, 6]",
+        "total": "5",
+        "op": "'push'"
+      },
+      null
+    ],
+    [
+      "line",
+      "        if op == \"push\":",
+      {
+        "stack": "[1, 6]",
+        "total": "5",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "        elif op == \"pop\":",
+      {
+        "stack": "[1, 6]",
+        "total": "5",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "            if stack:",
+      {
+        "stack": "[1, 6]",
+        "total": "5",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "                total += stack.pop()",
+      {
+        "stack": "[1, 6]",
+        "total": "5",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "    for op in OPS:",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "        if op == \"push\":",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'rot'"
+      },
+      null
+    ],
+    [
+      "line",
+      "        elif op == \"pop\":",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'rot'"
+      },
+      null
+    ],
+    [
+      "line",
+      "        elif op == \"rot\":",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'rot'"
+      },
+      null
+    ],
+    [
+      "line",
+      "            if len(stack) > 1:",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'rot'"
+      },
+      null
+    ],
+    [
+      "line",
+      "    for op in OPS:",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'rot'"
+      },
+      null
+    ],
+    [
+      "line",
+      "        if op == \"push\":",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "        elif op == \"pop\":",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "            if stack:",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "                total += stack.pop()",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "    for op in OPS:",
+      {
+        "stack": "[]",
+        "total": "12",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "line",
+      "    return (stack, total)",
+      {
+        "stack": "[]",
+        "total": "12",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "return",
+      "    return (stack, total)",
+      {
+        "stack": "[]",
+        "total": "12",
+        "op": "'pop'"
+      },
+      "([], 12)"
+    ]
+  ],
+  "pred": [
+    [
+      "CALL",
+      "def run():  # <<START_OF_TRACE",
+      {},
+      null
+    ],
+    [
+      "LINE",
+      "    stack = [1, 2, 3]",
+      {},
+      null
+    ],
+    [
+      "LINE",
+      "    total = 0",
+      {
+        "stack": "[1, 2, 3]"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "    for op in OPS:",
+      {
+        "stack": "[1, 2, 3]",
+        "total": "0"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "        if op == \"push\":",
+      {
+        "stack": "[1, 2, 3]",
+        "total": "0",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "        elif op == \"pop\":",
+      {
+        "stack": "[1, 2, 3]",
+        "total": "0",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "            if stack:",
+      {
+        "stack": "[1, 2, 3]",
+        "total": "0",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "                total += stack.pop()",
+      {
+        "stack": "[1, 2, 3]",
+        "total": "0",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "    for op in OPS:",
+      {
+        "stack": "[1, 2]",
+        "total": "3",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "        if op == \"push\":",
+      {
+        "stack": "[1, 2]",
+        "total": "3",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "        elif op == \"pop\":",
+      {
+        "stack": "[1, 2]",
+        "total": "3",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "            if stack:",
+      {
+        "stack": "[1, 2]",
+        "total": "3",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "                total += stack.pop()",
+      {
+        "stack": "[1, 2]",
+        "total": "3",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "    for op in OPS:",
+      {
+        "stack": "[1]",
+        "total": "5",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "        if op == \"push\":",
+      {
+        "stack": "[1]",
+        "total": "5",
+        "op": "'push'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "            stack.append((total + 1) % 10)",
+      {
+        "stack": "[1]",
+        "total": "5",
+        "op": "'push'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "    for op in OPS:",
+      {
+        "stack": "[1, 6]",
+        "total": "5",
+        "op": "'push'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "        if op == \"push\":",
+      {
+        "stack": "[1, 6]",
+        "total": "5",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "        elif op == \"pop\":",
+      {
+        "stack": "[1, 6]",
+        "total": "5",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "            if stack:",
+      {
+        "stack": "[1, 6]",
+        "total": "5",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "                total += stack.pop()",
+      {
+        "stack": "[1, 6]",
+        "total": "5",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "    for op in OPS:",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "        if op == \"push\":",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'rot'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "        elif op == \"pop\":",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'rot'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "        elif op == \"rot\":",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'rot'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "            if len(stack) > 1:",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'rot'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "    for op in OPS:",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'rot'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "        if op == \"push\":",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "        elif op == \"pop\":",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "            if stack:",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "                total += stack.pop()",
+      {
+        "stack": "[1]",
+        "total": "11",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "    for op in OPS:",
+      {
+        "stack": "[]",
+        "total": "12",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "LINE",
+      "    return (stack, total)",
+      {
+        "stack": "[]",
+        "total": "12",
+        "op": "'pop'"
+      },
+      null
+    ],
+    [
+      "RETURN",
+      "    return (stack, total)",
+      {
+        "stack": "[]",
+        "total": "12",
+        "op": "'pop'"
+      },
+      "([], 12)"
+    ]
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "model": "facebook/cwm",
+  "lora": "adapters/cwm_cascade",
+  "n": 248,
+  "files": [
+    "data/uitrans_cascade_heldout.jsonl",
+    "data/uitrans_vanilla.jsonl",
+    "data/uitrans_cascade_js.jsonl"
+  ],
+  "overall_exact": 0.6653,
+  "overall_field_f1": 0.9173,
+  "n_unparsed": 0,
+  "by_target": {
+    "cascade_js": {
+      "exact": 0.75,
+      "field_f1": 0.981,
+      "n": 120
+    },
+    "uidom": {
+      "exact": 1.0,
+      "field_f1": 1.0,
+      "n": 20
+    },
+    "uitick": {
+      "exact": 0.964,
+      "field_f1": 0.997,
+      "n": 28
+    },
+    "vanilla": {
+      "exact": 0.35,
+      "field_f1": 0.772,
+      "n": 80
+    }
+  },
+  "fail_examples": {
+    "uitick": [
+      {
+        "action": {
+          "type": "input",
+          "target": "email",
+          "value": "x@y"
+        },
+        "f1": 0.9231,
+        "pred": "{'fields': {'email': 'x@y', 'password': '', 'confirm': ''}, 'errors': {'email': 'invalid', 'password': 'too_short', 'confirm': 'mismatch'}, 'can_submit': False}",
+        "raw": "{'fields': {'email': 'x@y', 'password': '', 'confirm': ''}, 'errors': {'email': 'invalid', 'password': 'too_short', 'confirm': 'mismatch'}, 'can_submit': False}",
+        "truth": "{'fields': {'email': 'x@y', 'password': '', 'confirm': ''}, 'errors': {'email': 'invalid', 'password': 'too_short'}, 'can_submit': False}"
+      }
+    ],
+    "uidom": [],
+    "vanilla": [
+      {
+        "action": {
+          "field": "username",
+          "type": "input",
+          "value": ""
+        },
+        "f1": 0.4167,
+        "pred": "{'controls': {'email': {'message': 'Error message', 'status': ''}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'message': 'Username is required', 'status': 'error'}}, 'fields': {'email': '', 'password': '', 'password2'",
+        "raw": "{'controls': {'email': {'message': 'Error message', 'status': ''}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'messag",
+        "truth": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Username must be at least 3 characters', '"
+      },
+      {
+        "action": {
+          "field": "username",
+          "type": "input",
+          "value": "Nora"
+        },
+        "f1": 0.5,
+        "pred": "{'controls': {'email': {'message': 'Error message', 'status': ''}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'message': 'Error message', 'status': 'success'}}, 'fields': {'email': '', 'password': '', 'password2': '',",
+        "raw": "{'controls': {'email': {'message': 'Error message', 'status': ''}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'messag",
+        "truth": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Error message', 'status': 'success'}}, 'fi"
+      },
+      {
+        "action": {
+          "field": "email",
+          "type": "input",
+          "value": "not-email"
+        },
+        "f1": 0.5,
+        "pred": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'message': 'Error message', 'status': ''}}, 'fields': {'email': 'not-email', 'password': '', 'pas",
+        "raw": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username'",
+        "truth": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Username must be at least 3 characters', '"
+      },
+      {
+        "action": {
+          "field": "email",
+          "type": "input",
+          "value": "nora@example.com"
+        },
+        "f1": 0.75,
+        "pred": "{'controls': {'email': {'message': 'Error message', 'status': 'success'}, 'password': {'message': 'Error message', 'status': 'error'}, 'password2': {'message': 'Error message', 'status': 'error'}, 'username': {'message': 'Error message', 'status': 'error'}}, 'fields': {'email': 'nora@example.com', '",
+        "raw": "{'controls': {'email': {'message': 'Error message', 'status': 'success'}, 'password': {'message': 'Error message', 'status': 'error'}, 'password2': {'message': 'Error message', 'status': 'error'}, 'us",
+        "truth": "{'controls': {'email': {'message': 'Error message', 'status': 'success'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Username must be at least 3 characters', 'sta"
+      }
+    ],
+    "cascade_js": [
+      {
+        "action": {
+          "field": "password",
+          "type": "input",
+          "value": "StrongPass9"
+        },
+        "f1": 0.9899,
+        "pred": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required': True, 'status': 'error', 'visible': True}, 'city': {'disabled': False, 'message': 'City is requir",
+        "raw": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required",
+        "truth": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required': True, 'status': 'error', 'visible': True}, 'city': {'disabled': False, 'message': 'City is requir"
+      },
+      {
+        "action": {
+          "field": "age",
+          "type": "input",
+          "value": "12"
+        },
+        "f1": 0.8657,
+        "pred": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required': True, 'status': 'error', 'visible': True}, 'city': {'disabled': False, 'message': 'City is requir",
+        "raw": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required",
+        "truth": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age must be between 13 and 120', 'required': True, 'status': 'error', 'visible': True}, 'city': {'disabled': False, 'message': "
+      },
+      {
+        "action": {
+          "field": "age",
+          "type": "input",
+          "value": "16"
+        },
+        "f1": 0.8756,
+        "pred": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required': True, 'status': 'error', 'visible': True}, 'city': {'disabled': False, 'message': 'City is requir",
+        "raw": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required",
+        "truth": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'city': {'disabled': False, 'message': 'City is requir"
+      },
+      {
+        "action": {
+          "field": "age",
+          "type": "input",
+          "value": "18"
+        },
+        "f1": 0.9899,
+        "pred": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'city': {'disabled': False, 'message': 'City is requir",
+        "raw": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Error message', 'required':",
+        "truth": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'city': {'disabled': False, 'message': 'City is requir"
+      }
+    ]
+  }
+}

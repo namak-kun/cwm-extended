@@ -1,0 +1,65 @@
+{
+  "model": "facebook/cwm",
+  "lora": null,
+  "n": 48,
+  "files": [
+    "data/uidom_xl.jsonl"
+  ],
+  "overall_exact": 0.75,
+  "overall_field_f1": 0.9922,
+  "n_unparsed": 0,
+  "by_target": {
+    "uidom": {
+      "exact": 0.75,
+      "field_f1": 0.992,
+      "changed_field_acc": 0.807,
+      "delta_exact": 0.75,
+      "copy_field_f1": 0.926,
+      "n": 48
+    }
+  },
+  "fail_examples": {
+    "uidom": [
+      {
+        "action": {
+          "type": "select",
+          "id": "tab-3"
+        },
+        "f1": 0.9588,
+        "pred": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'ta",
+        "raw": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'tex",
+        "truth": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'ta"
+      },
+      {
+        "action": {
+          "type": "select",
+          "id": "tab-1"
+        },
+        "f1": 0.9588,
+        "pred": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'ta",
+        "raw": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'tex",
+        "truth": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'true'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'tag"
+      },
+      {
+        "action": {
+          "type": "select",
+          "id": "tab-9"
+        },
+        "f1": 0.9588,
+        "pred": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'ta",
+        "raw": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'tex",
+        "truth": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'ta"
+      },
+      {
+        "action": {
+          "type": "select",
+          "id": "tab-4"
+        },
+        "f1": 0.9588,
+        "pred": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'ta",
+        "raw": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'tex",
+        "truth": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'ta"
+      }
+    ]
+  }
+}

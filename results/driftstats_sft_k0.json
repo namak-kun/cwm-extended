@@ -1,0 +1,24 @@
+{
+  "tag": "sft_k0",
+  "app": "togglelist",
+  "lora": "adapters/cwm_cascade",
+  "n_roll": 16,
+  "steps": 8,
+  "reground_k": 0,
+  "mean_step_acc": 0.6172,
+  "ci95_over_rollouts": [
+    0.469,
+    0.766
+  ],
+  "per_step_acc": [
+    0.812,
+    0.688,
+    0.688,
+    0.75,
+    0.562,
+    0.5,
+    0.438,
+    0.5
+  ],
+  "all_steps_correct_rate": 0.188
+}

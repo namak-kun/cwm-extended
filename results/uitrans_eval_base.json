@@ -1,0 +1,217 @@
+{
+  "model": "facebook/cwm",
+  "lora": null,
+  "n": 248,
+  "files": [
+    "data/uitrans_cascade_heldout.jsonl",
+    "data/uitrans_vanilla.jsonl",
+    "data/uitrans_cascade_js.jsonl"
+  ],
+  "overall_exact": 0.6895,
+  "overall_field_f1": 0.941,
+  "n_unparsed": 0,
+  "by_target": {
+    "cascade_js": {
+      "exact": 0.783,
+      "field_f1": 0.982,
+      "n": 120
+    },
+    "uidom": {
+      "exact": 0.8,
+      "field_f1": 0.986,
+      "n": 20
+    },
+    "uitick": {
+      "exact": 0.679,
+      "field_f1": 0.967,
+      "n": 28
+    },
+    "vanilla": {
+      "exact": 0.525,
+      "field_f1": 0.858,
+      "n": 80
+    }
+  },
+  "fail_examples": {
+    "uitick": [
+      {
+        "action": {
+          "type": "input",
+          "target": "confirm",
+          "value": "abcdefgh"
+        },
+        "f1": 0.9091,
+        "pred": "{'fields': {'email': 'x@y', 'password': 'longenough1', 'confirm': 'abcdefgh'}, 'errors': {'email': 'invalid'}, 'can_submit': False}",
+        "raw": "{'fields': {'email': 'x@y', 'password': 'longenough1', 'confirm': 'abcdefgh'}, 'errors': {'email': 'invalid'}, 'can_submit': False}",
+        "truth": "{'fields': {'email': 'x@y', 'password': 'longenough1', 'confirm': 'abcdefgh'}, 'errors': {'email': 'invalid', 'confirm': 'mismatch'}, 'can_submit': False}"
+      },
+      {
+        "action": {
+          "type": "input",
+          "target": "password",
+          "value": "longenough1"
+        },
+        "f1": 0.9231,
+        "pred": "{'fields': {'email': '', 'password': 'longenough1', 'confirm': 'short'}, 'errors': {'email': 'invalid', 'password': 'too_short', 'confirm': 'mismatch'}, 'can_submit': False}",
+        "raw": "{'fields': {'email': '', 'password': 'longenough1', 'confirm': 'short'}, 'errors': {'email': 'invalid', 'password': 'too_short', 'confirm': 'mismatch'}, 'can_submit': False}",
+        "truth": "{'fields': {'email': '', 'password': 'longenough1', 'confirm': 'short'}, 'errors': {'email': 'invalid', 'confirm': 'mismatch'}, 'can_submit': False}"
+      },
+      {
+        "action": {
+          "type": "input",
+          "target": "password",
+          "value": "abcdefgh"
+        },
+        "f1": 0.9231,
+        "pred": "{'fields': {'email': 'bad', 'password': 'abcdefgh', 'confirm': ''}, 'errors': {'email': 'invalid', 'password': 'too_short', 'confirm': 'mismatch'}, 'can_submit': False}",
+        "raw": "{'fields': {'email': 'bad', 'password': 'abcdefgh', 'confirm': ''}, 'errors': {'email': 'invalid', 'password': 'too_short', 'confirm': 'mismatch'}, 'can_submit': False}",
+        "truth": "{'fields': {'email': 'bad', 'password': 'abcdefgh', 'confirm': ''}, 'errors': {'email': 'invalid', 'confirm': 'mismatch'}, 'can_submit': False}"
+      },
+      {
+        "action": {
+          "type": "input",
+          "target": "email",
+          "value": "x@y"
+        },
+        "f1": 0.9231,
+        "pred": "{'fields': {'email': 'x@y', 'password': '', 'confirm': ''}, 'errors': {'email': 'invalid', 'password': 'too_short', 'confirm': 'mismatch'}, 'can_submit': False}",
+        "raw": "{'fields': {'email': 'x@y', 'password': '', 'confirm': ''}, 'errors': {'email': 'invalid', 'password': 'too_short', 'confirm': 'mismatch'}, 'can_submit': False}",
+        "truth": "{'fields': {'email': 'x@y', 'password': '', 'confirm': ''}, 'errors': {'email': 'invalid', 'password': 'too_short'}, 'can_submit': False}"
+      }
+    ],
+    "uidom": [
+      {
+        "action": {
+          "type": "select",
+          "id": "tab-1"
+        },
+        "f1": 0.9385,
+        "pred": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'ta",
+        "raw": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'tex",
+        "truth": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'true'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'tag"
+      },
+      {
+        "action": {
+          "type": "select",
+          "id": "tab-1"
+        },
+        "f1": 0.9184,
+        "pred": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'ta",
+        "raw": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'tex",
+        "truth": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'true'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'tag"
+      },
+      {
+        "action": {
+          "type": "select",
+          "id": "tab-1"
+        },
+        "f1": 0.8788,
+        "pred": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'true'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'tag",
+        "raw": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'true'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text",
+        "truth": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'true'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'tag"
+      },
+      {
+        "action": {
+          "type": "select",
+          "id": "tab-6"
+        },
+        "f1": 0.9825,
+        "pred": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'ta",
+        "raw": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'tex",
+        "truth": "{'tag': 'div', 'attrs': {}, 'children': [{'tag': 'button', 'id': 'tab-0', 'attrs': {'aria-selected': 'false'}, 'text': 'T0'}, {'tag': 'button', 'id': 'tab-1', 'attrs': {'aria-selected': 'false'}, 'text': 'T1'}, {'tag': 'button', 'id': 'tab-2', 'attrs': {'aria-selected': 'false'}, 'text': 'T2'}, {'ta"
+      }
+    ],
+    "vanilla": [
+      {
+        "action": {
+          "field": "username",
+          "type": "input",
+          "value": ""
+        },
+        "f1": 0.4167,
+        "pred": "{'controls': {'email': {'message': 'Error message', 'status': ''}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'message': 'Username is required', 'status': 'error'}}, 'fields': {'email': '', 'password': '', 'password2'",
+        "raw": "{'controls': {'email': {'message': 'Error message', 'status': ''}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'messag",
+        "truth": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Username must be at least 3 characters', '"
+      },
+      {
+        "action": {
+          "field": "username",
+          "type": "input",
+          "value": "Nora"
+        },
+        "f1": 0.5,
+        "pred": "{'controls': {'email': {'message': 'Error message', 'status': ''}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'message': 'Error message', 'status': 'success'}}, 'fields': {'email': '', 'password': '', 'password2': '',",
+        "raw": "{'controls': {'email': {'message': 'Error message', 'status': ''}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'messag",
+        "truth": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Error message', 'status': 'success'}}, 'fi"
+      },
+      {
+        "action": {
+          "field": "email",
+          "type": "input",
+          "value": "not-email"
+        },
+        "f1": 0.5,
+        "pred": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'message': 'Error message', 'status': ''}}, 'fields': {'email': 'not-email', 'password': '', 'pas",
+        "raw": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username'",
+        "truth": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Username must be at least 3 characters', '"
+      },
+      {
+        "action": {
+          "field": "email",
+          "type": "input",
+          "value": "nora@example.com"
+        },
+        "f1": 0.5,
+        "pred": "{'controls': {'email': {'message': 'Error message', 'status': 'success'}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'message': 'Error message', 'status': ''}}, 'fields': {'email': 'nora@example.com', 'password': '', ",
+        "raw": "{'controls': {'email': {'message': 'Error message', 'status': 'success'}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {",
+        "truth": "{'controls': {'email': {'message': 'Error message', 'status': 'success'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Username must be at least 3 characters', 'sta"
+      }
+    ],
+    "cascade_js": [
+      {
+        "action": {
+          "field": "password",
+          "type": "input",
+          "value": "StrongPass9"
+        },
+        "f1": 0.9899,
+        "pred": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required': True, 'status': 'error', 'visible': True}, 'city': {'disabled': False, 'message': 'City is requir",
+        "raw": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required",
+        "truth": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required': True, 'status': 'error', 'visible': True}, 'city': {'disabled': False, 'message': 'City is requir"
+      },
+      {
+        "action": {
+          "field": "accountType",
+          "type": "select",
+          "value": "business"
+        },
+        "f1": 0.9902,
+        "pred": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required': True, 'status': 'error', 'visible': True}, 'city': {'disabled': False, 'message': 'City is requir",
+        "raw": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required",
+        "truth": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required': True, 'status': 'error', 'visible': True}, 'city': {'disabled': False, 'message': 'City is requir"
+      },
+      {
+        "action": {
+          "field": "country",
+          "type": "select",
+          "value": "Canada"
+        },
+        "f1": 0.9064,
+        "pred": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required': True, 'status': 'error', 'visible': True}, 'city': {'disabled': False, 'message': 'City is requir",
+        "raw": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required",
+        "truth": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required': True, 'status': 'error', 'visible': True}, 'city': {'disabled': False, 'message': 'City is requir"
+      },
+      {
+        "action": {
+          "field": "country",
+          "type": "select",
+          "value": "Other"
+        },
+        "f1": 0.9128,
+        "pred": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required': True, 'status': 'error', 'visible': True}, 'city': {'disabled': True, 'message': 'Error message',",
+        "raw": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required",
+        "truth": "{'controls': {'accountType': {'disabled': False, 'message': 'Error message', 'required': True, 'status': 'success', 'visible': True}, 'age': {'disabled': False, 'message': 'Age is required', 'required': True, 'status': 'error', 'visible': True}, 'city': {'disabled': True, 'message': 'Error message',"
+      }
+    ]
+  }
+}

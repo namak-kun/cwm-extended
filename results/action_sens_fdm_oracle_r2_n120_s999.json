@@ -1,0 +1,51 @@
+{
+  "lora": "adapters/cwm_fdm_oracle_r2",
+  "n": 120,
+  "seed": 999,
+  "overall": {
+    "true_acc": 0.75,
+    "swap_acc": 0.0,
+    "true_minus_swap": 0.75,
+    "pred_diversity": 4,
+    "gt_diversity": 4,
+    "track_acc": 0.7292
+  },
+  "action_separable": {
+    "n": 120,
+    "true_acc": 0.75,
+    "swap_acc": 0.0,
+    "true_minus_swap": 0.75,
+    "pred_diversity": 4
+  },
+  "action_insensitive": {
+    "n": 0,
+    "true_acc": null,
+    "swap_acc": null
+  },
+  "by_event": {
+    "contact": {
+      "n": 61,
+      "true_acc": 0.689,
+      "swap_acc": 0.0,
+      "pred_div": 4
+    },
+    "move_only": {
+      "n": 49,
+      "true_acc": 0.816,
+      "swap_acc": 0.0,
+      "pred_div": 4
+    },
+    "stomp": {
+      "n": 16,
+      "true_acc": 0.688,
+      "swap_acc": 0.0,
+      "pred_div": 4
+    },
+    "death": {
+      "n": 16,
+      "true_acc": 0.688,
+      "swap_acc": 0.0,
+      "pred_div": 4
+    }
+  }
+}

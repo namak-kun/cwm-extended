@@ -1,0 +1,30 @@
+{
+  "by_bucket": {
+    "oop": {
+      "tf": 0.973,
+      "retrace": 0.973,
+      "retrace_x": 0.973,
+      "n_probes": {
+        "tf": 75,
+        "retrace": 75,
+        "retrace_x": 75
+      }
+    },
+    "multientity": {
+      "tf": 1,
+      "retrace": 1,
+      "retrace_x": 1,
+      "n_probes": {
+        "tf": 53,
+        "retrace": 22,
+        "retrace_x": 18
+      }
+    }
+  },
+  "gates": {
+    "capability_retrace>=tf_oop": true,
+    "real_signal_retrace>>retrace_x_oop": false,
+    "retention_retrace~=tf_multientity": true
+  },
+  "verdict": "OPTION-1 NOT VIABLE -> use hybrid"
+}

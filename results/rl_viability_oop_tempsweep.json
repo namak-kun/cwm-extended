@@ -1,0 +1,45 @@
+{
+  "bucket": "oop",
+  "lora": "adapters/cwm_mixed_expanded",
+  "n": 12,
+  "G": 8,
+  "greedy_reward_mean": 0.9308,
+  "by_temp": {
+    "0.8": {
+      "sampled_group_mean": 0.9308,
+      "best_of_G_mean": 0.9308,
+      "mean_group_std": 0.0,
+      "frac_groups_with_spread": 0.0,
+      "headroom_bestG_minus_greedy": 0.0,
+      "frac_groups_with_perfect_rollout": 0.0,
+      "total_perfect_rollouts": 0,
+      "total_rollouts": 96,
+      "grpo_viable": false,
+      "rest_viable": false
+    },
+    "1.2": {
+      "sampled_group_mean": 0.9308,
+      "best_of_G_mean": 0.9308,
+      "mean_group_std": 0.0,
+      "frac_groups_with_spread": 0.0,
+      "headroom_bestG_minus_greedy": 0.0,
+      "frac_groups_with_perfect_rollout": 0.0,
+      "total_perfect_rollouts": 0,
+      "total_rollouts": 96,
+      "grpo_viable": false,
+      "rest_viable": false
+    },
+    "1.5": {
+      "sampled_group_mean": 0.9308,
+      "best_of_G_mean": 0.9308,
+      "mean_group_std": 0.0,
+      "frac_groups_with_spread": 0.0,
+      "headroom_bestG_minus_greedy": 0.0,
+      "frac_groups_with_perfect_rollout": 0.0,
+      "total_perfect_rollouts": 0,
+      "total_rollouts": 96,
+      "grpo_viable": false,
+      "rest_viable": false
+    }
+  }
+}

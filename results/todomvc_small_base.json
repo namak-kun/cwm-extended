@@ -1,0 +1,24 @@
+{
+  "model": "facebook/cwm",
+  "lora": null,
+  "n": 32,
+  "files": [
+    "data/uitrans_todomvc_small.jsonl"
+  ],
+  "overall_exact": 1.0,
+  "overall_field_f1": 1.0,
+  "n_unparsed": 0,
+  "by_target": {
+    "todomvc": {
+      "exact": 1.0,
+      "field_f1": 1.0,
+      "changed_field_acc": 1.0,
+      "delta_exact": 1.0,
+      "copy_field_f1": 0.753,
+      "n": 32
+    }
+  },
+  "fail_examples": {
+    "todomvc": []
+  }
+}

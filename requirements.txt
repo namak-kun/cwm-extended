@@ -1,0 +1,9 @@
+# Inference / eval / rendering stack (the .venv_vllm environment).
+# Install with a CUDA-enabled box:  pip install -r requirements.txt
+# then:  python -m playwright install chromium
+vllm==0.23.0
+transformers==5.12.1
+torch==2.11.0
+playwright==1.61.0
+pillow==12.2.0
+numpy==2.3.5

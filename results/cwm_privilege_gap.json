@@ -1,0 +1,42 @@
+{
+  "model": "/home/t-nagupta/.cache/huggingface/hub/models--facebook--cwm/snapshots/1b572b04e7f9613bb8ea902fedff4a1ed887c573/",
+  "by_program": {
+    "recursion_fib": {
+      "true_frames": 167,
+      "pred_frames": 167,
+      "teacher_acc": 0.88,
+      "student_acc": 0.88,
+      "privilege_gap": 0.0,
+      "free_rollout_acc": 0.88,
+      "diagnosis": "not a failure case (both high)"
+    },
+    "oop_encapsulation": {
+      "true_frames": 60,
+      "pred_frames": 60,
+      "teacher_acc": 0.949,
+      "student_acc": 0.017,
+      "privilege_gap": 0.932,
+      "free_rollout_acc": 0.033,
+      "diagnosis": "DRIFT-INDUCED -> OPSD/DAgger have signal"
+    },
+    "multientity_sideeffect": {
+      "true_frames": 205,
+      "pred_frames": 189,
+      "teacher_acc": 0.994,
+      "student_acc": 1,
+      "privilege_gap": -0.006,
+      "free_rollout_acc": 0.995,
+      "diagnosis": "not a failure case (both high)"
+    },
+    "long_arithmetic": {
+      "true_frames": 85,
+      "pred_frames": 85,
+      "teacher_acc": 0.726,
+      "student_acc": 0.131,
+      "privilege_gap": 0.595,
+      "free_rollout_acc": 0.141,
+      "diagnosis": "DRIFT-INDUCED -> OPSD/DAgger have signal"
+    }
+  },
+  "elapsed_sec": 734.6
+}

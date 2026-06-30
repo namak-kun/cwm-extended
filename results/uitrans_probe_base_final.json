@@ -1,0 +1,166 @@
+{
+  "model": "facebook/cwm",
+  "lora": null,
+  "n": 219,
+  "files": [
+    "data/uitrans_todomvc.jsonl",
+    "data/uitrans_vanilla.jsonl",
+    "data/uitrans_streamlit.jsonl"
+  ],
+  "overall_exact": 0.7123,
+  "overall_field_f1": 0.858,
+  "n_unparsed": 19,
+  "by_target": {
+    "streamlit": {
+      "exact": 0.893,
+      "field_f1": 0.986,
+      "n": 56
+    },
+    "todomvc": {
+      "exact": 0.771,
+      "field_f1": 0.771,
+      "n": 83
+    },
+    "vanilla": {
+      "exact": 0.525,
+      "field_f1": 0.858,
+      "n": 80
+    }
+  },
+  "fail_examples": {
+    "todomvc": [
+      {
+        "action": {
+          "title": "task 1",
+          "type": "add"
+        },
+        "f1": 0.0,
+        "pred": "None",
+        "raw": "None",
+        "truth": "{'filter': 'all', 'todos': [{'completed': False, 'id': 1, 'title': 'milk-1'}, {'completed': False, 'id': 2, 'title': 'task 1'}]}"
+      },
+      {
+        "action": {
+          "completed": false,
+          "type": "toggleAll"
+        },
+        "f1": 0.0,
+        "pred": "None",
+        "raw": "None",
+        "truth": "{'filter': 'all', 'todos': [{'completed': False, 'id': 1, 'title': 'milk-1'}]}"
+      },
+      {
+        "action": {
+          "filter": "active",
+          "type": "setFilter"
+        },
+        "f1": 0.0,
+        "pred": "None",
+        "raw": "None",
+        "truth": "{'filter': 'active', 'todos': [{'completed': False, 'id': 1, 'title': 'milk-1'}]}"
+      },
+      {
+        "action": {
+          "id": 1,
+          "type": "toggle"
+        },
+        "f1": 0.0,
+        "pred": "None",
+        "raw": "None",
+        "truth": "{'filter': 'all', 'todos': [{'completed': True, 'id': 1, 'title': 'milk-1'}]}"
+      }
+    ],
+    "vanilla": [
+      {
+        "action": {
+          "field": "username",
+          "type": "input",
+          "value": ""
+        },
+        "f1": 0.4167,
+        "pred": "{'controls': {'email': {'message': 'Error message', 'status': ''}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'message': 'Username is required', 'status': 'error'}}, 'fields': {'email': '', 'password': '', 'password2'",
+        "raw": "{'controls': {'email': {'message': 'Error message', 'status': ''}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'messag",
+        "truth": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Username must be at least 3 characters', '"
+      },
+      {
+        "action": {
+          "field": "username",
+          "type": "input",
+          "value": "Nora"
+        },
+        "f1": 0.5,
+        "pred": "{'controls': {'email': {'message': 'Error message', 'status': ''}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'message': 'Error message', 'status': 'success'}}, 'fields': {'email': '', 'password': '', 'password2': '',",
+        "raw": "{'controls': {'email': {'message': 'Error message', 'status': ''}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'messag",
+        "truth": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Error message', 'status': 'success'}}, 'fi"
+      },
+      {
+        "action": {
+          "field": "email",
+          "type": "input",
+          "value": "not-email"
+        },
+        "f1": 0.5,
+        "pred": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'message': 'Error message', 'status': ''}}, 'fields': {'email': 'not-email', 'password': '', 'pas",
+        "raw": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username'",
+        "truth": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Username must be at least 3 characters', '"
+      },
+      {
+        "action": {
+          "field": "email",
+          "type": "input",
+          "value": "nora@example.com"
+        },
+        "f1": 0.5,
+        "pred": "{'controls': {'email': {'message': 'Error message', 'status': 'success'}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {'message': 'Error message', 'status': ''}}, 'fields': {'email': 'nora@example.com', 'password': '', ",
+        "raw": "{'controls': {'email': {'message': 'Error message', 'status': 'success'}, 'password': {'message': 'Error message', 'status': ''}, 'password2': {'message': 'Error message', 'status': ''}, 'username': {",
+        "truth": "{'controls': {'email': {'message': 'Error message', 'status': 'success'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Username must be at least 3 characters', 'sta"
+      }
+    ],
+    "streamlit": [
+      {
+        "action": {
+          "field": "password",
+          "type": "set_text",
+          "value": "short"
+        },
+        "f1": 0.9655,
+        "pred": "{'fields': {'confirm': '', 'email': 'bad', 'password': 'short'}, 'errors': {'accepted_terms': 'required', 'email': 'invalid', 'password': 'too_short'}, 'can_submit': False, 'accepted_terms': False, 'newsletter': False, 'input_email': 'bad', 'input_password': 'short', 'input_confirm': '', 'input_term",
+        "raw": "{'fields': {'confirm': '', 'email': 'bad', 'password': 'short'}, 'errors': {'accepted_terms': 'required', 'email': 'invalid', 'password': 'too_short'}, 'can_submit': False, 'accepted_terms': False, 'n",
+        "truth": "{'accepted_terms': False, 'can_submit': False, 'errors': {'accepted_terms': 'required', 'confirm': 'mismatch', 'email': 'invalid', 'password': 'too_short'}, 'fields': {'confirm': '', 'email': 'bad', 'password': 'short'}, 'input_confirm': '', 'input_email': 'bad', 'input_newsletter': False, 'input_pa"
+      },
+      {
+        "action": {
+          "field": "terms",
+          "type": "set_checkbox",
+          "value": false
+        },
+        "f1": 0.6957,
+        "pred": "{'fields': {'confirm': 'longenough', 'email': 'user@example.com', 'password': 'longenough'}, 'errors': {}, 'can_submit': True, 'accepted_terms': True, 'newsletter': True, 'input_email': 'user@example.com', 'input_password': 'longenough', 'input_confirm': 'longenough', 'input_terms': True, 'input_new",
+        "raw": "{'fields': {'confirm': 'longenough', 'email': 'user@example.com', 'password': 'longenough'}, 'errors': {}, 'can_submit': True, 'accepted_terms': True, 'newsletter': True, 'input_email': 'user@example.",
+        "truth": "{'accepted_terms': False, 'can_submit': False, 'errors': {'accepted_terms': 'required'}, 'fields': {'confirm': 'longenough', 'email': 'user@example.com', 'password': 'longenough'}, 'input_confirm': 'longenough', 'input_email': 'user@example.com', 'input_newsletter': True, 'input_password': 'longenou"
+      },
+      {
+        "action": {
+          "field": "email",
+          "type": "set_text",
+          "value": "x@y"
+        },
+        "f1": 0.96,
+        "pred": "{'fields': {'confirm': 'longenough', 'email': 'x@y', 'password': 'longenough'}, 'errors': {'email': 'invalid'}, 'can_submit': False, 'accepted_terms': False, 'newsletter': True, 'input_email': 'x@y', 'input_password': 'longenough', 'input_confirm': 'longenough', 'input_terms': False, 'input_newslett",
+        "raw": "{'fields': {'confirm': 'longenough', 'email': 'x@y', 'password': 'longenough'}, 'errors': {'email': 'invalid'}, 'can_submit': False, 'accepted_terms': False, 'newsletter': True, 'input_email': 'x@y', ",
+        "truth": "{'accepted_terms': False, 'can_submit': False, 'errors': {'accepted_terms': 'required', 'email': 'invalid'}, 'fields': {'confirm': 'longenough', 'email': 'x@y', 'password': 'longenough'}, 'input_confirm': 'longenough', 'input_email': 'x@y', 'input_newsletter': True, 'input_password': 'longenough', '"
+      },
+      {
+        "action": {
+          "field": "email",
+          "type": "set_text",
+          "value": "x@y.org"
+        },
+        "f1": 0.8696,
+        "pred": "{'fields': {'confirm': 'longenough', 'email': 'x@y.org', 'password': 'longenough'}, 'errors': {}, 'can_submit': True, 'accepted_terms': False, 'newsletter': True, 'input_email': 'x@y.org', 'input_password': 'longenough', 'input_confirm': 'longenough', 'input_terms': False, 'input_newsletter': True}",
+        "raw": "{'fields': {'confirm': 'longenough', 'email': 'x@y.org', 'password': 'longenough'}, 'errors': {}, 'can_submit': True, 'accepted_terms': False, 'newsletter': True, 'input_email': 'x@y.org', 'input_pass",
+        "truth": "{'accepted_terms': False, 'can_submit': False, 'errors': {'accepted_terms': 'required'}, 'fields': {'confirm': 'longenough', 'email': 'x@y.org', 'password': 'longenough'}, 'input_confirm': 'longenough', 'input_email': 'x@y.org', 'input_newsletter': True, 'input_password': 'longenough', 'input_terms'"
+      }
+    ]
+  }
+}

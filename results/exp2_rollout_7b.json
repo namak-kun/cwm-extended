@@ -1,0 +1,636 @@
+{
+  "model": "vllm:Qwen2.5-Coder-7B-Instruct",
+  "n_games_per_mode": 24,
+  "horizon": 20,
+  "semantic": {
+    "free": {
+      "1": {
+        "exact": 0.5,
+        "field_acc": 0.932,
+        "viol_rate": 0
+      },
+      "2": {
+        "exact": 0.333,
+        "field_acc": 0.907,
+        "viol_rate": 0
+      },
+      "3": {
+        "exact": 0.333,
+        "field_acc": 0.897,
+        "viol_rate": 0
+      },
+      "4": {
+        "exact": 0.167,
+        "field_acc": 0.854,
+        "viol_rate": 0.042
+      },
+      "5": {
+        "exact": 0.167,
+        "field_acc": 0.855,
+        "viol_rate": 0.042
+      },
+      "6": {
+        "exact": 0.042,
+        "field_acc": 0.829,
+        "viol_rate": 0
+      },
+      "7": {
+        "exact": 0.042,
+        "field_acc": 0.838,
+        "viol_rate": 0
+      },
+      "8": {
+        "exact": 0.042,
+        "field_acc": 0.826,
+        "viol_rate": 0
+      },
+      "9": {
+        "exact": 0.042,
+        "field_acc": 0.826,
+        "viol_rate": 0
+      },
+      "10": {
+        "exact": 0.042,
+        "field_acc": 0.832,
+        "viol_rate": 0
+      },
+      "11": {
+        "exact": 0.042,
+        "field_acc": 0.815,
+        "viol_rate": 0.042
+      },
+      "12": {
+        "exact": 0.042,
+        "field_acc": 0.807,
+        "viol_rate": 0
+      },
+      "13": {
+        "exact": 0.042,
+        "field_acc": 0.799,
+        "viol_rate": 0.042
+      },
+      "14": {
+        "exact": 0.042,
+        "field_acc": 0.799,
+        "viol_rate": 0.042
+      },
+      "15": {
+        "exact": 0.042,
+        "field_acc": 0.805,
+        "viol_rate": 0.042
+      },
+      "16": {
+        "exact": 0.042,
+        "field_acc": 0.793,
+        "viol_rate": 0.042
+      },
+      "17": {
+        "exact": 0.042,
+        "field_acc": 0.798,
+        "viol_rate": 0.042
+      },
+      "18": {
+        "exact": 0.083,
+        "field_acc": 0.804,
+        "viol_rate": 0.125
+      },
+      "19": {
+        "exact": 0.083,
+        "field_acc": 0.796,
+        "viol_rate": 0.042
+      },
+      "20": {
+        "exact": 0.083,
+        "field_acc": 0.794,
+        "viol_rate": 0.125
+      },
+      "mean_first_violation_t": 13.33,
+      "frac_ever_violating": 0.125
+    },
+    "teacher_forced": {
+      "1": {
+        "exact": 0.5,
+        "field_acc": 0.932,
+        "viol_rate": 0
+      },
+      "2": {
+        "exact": 0.667,
+        "field_acc": 0.955,
+        "viol_rate": 0
+      },
+      "3": {
+        "exact": 0.75,
+        "field_acc": 0.967,
+        "viol_rate": 0
+      },
+      "4": {
+        "exact": 0.625,
+        "field_acc": 0.945,
+        "viol_rate": 0.042
+      },
+      "5": {
+        "exact": 0.542,
+        "field_acc": 0.924,
+        "viol_rate": 0
+      },
+      "6": {
+        "exact": 0.792,
+        "field_acc": 0.967,
+        "viol_rate": 0
+      },
+      "7": {
+        "exact": 0.708,
+        "field_acc": 0.964,
+        "viol_rate": 0
+      },
+      "8": {
+        "exact": 0.542,
+        "field_acc": 0.921,
+        "viol_rate": 0
+      },
+      "9": {
+        "exact": 0.708,
+        "field_acc": 0.96,
+        "viol_rate": 0
+      },
+      "10": {
+        "exact": 0.625,
+        "field_acc": 0.93,
+        "viol_rate": 0
+      },
+      "11": {
+        "exact": 0.542,
+        "field_acc": 0.936,
+        "viol_rate": 0
+      },
+      "12": {
+        "exact": 0.792,
+        "field_acc": 0.967,
+        "viol_rate": 0
+      },
+      "13": {
+        "exact": 0.667,
+        "field_acc": 0.949,
+        "viol_rate": 0
+      },
+      "14": {
+        "exact": 0.625,
+        "field_acc": 0.932,
+        "viol_rate": 0
+      },
+      "15": {
+        "exact": 0.625,
+        "field_acc": 0.953,
+        "viol_rate": 0
+      },
+      "16": {
+        "exact": 0.458,
+        "field_acc": 0.916,
+        "viol_rate": 0.042
+      },
+      "17": {
+        "exact": 0.75,
+        "field_acc": 0.967,
+        "viol_rate": 0
+      },
+      "18": {
+        "exact": 0.458,
+        "field_acc": 0.918,
+        "viol_rate": 0.125
+      },
+      "19": {
+        "exact": 0.75,
+        "field_acc": 0.958,
+        "viol_rate": 0
+      },
+      "20": {
+        "exact": 0.625,
+        "field_acc": 0.931,
+        "viol_rate": 0
+      },
+      "mean_first_violation_t": 12.67,
+      "frac_ever_violating": 0.125
+    }
+  },
+  "random": {
+    "free": {
+      "1": {
+        "exact": 0.75,
+        "field_acc": 0.968,
+        "viol_rate": 0
+      },
+      "2": {
+        "exact": 0.375,
+        "field_acc": 0.903,
+        "viol_rate": 0
+      },
+      "3": {
+        "exact": 0.292,
+        "field_acc": 0.888,
+        "viol_rate": 0.042
+      },
+      "4": {
+        "exact": 0.125,
+        "field_acc": 0.853,
+        "viol_rate": 0
+      },
+      "5": {
+        "exact": 0.125,
+        "field_acc": 0.844,
+        "viol_rate": 0.042
+      },
+      "6": {
+        "exact": 0.083,
+        "field_acc": 0.835,
+        "viol_rate": 0.042
+      },
+      "7": {
+        "exact": 0.042,
+        "field_acc": 0.826,
+        "viol_rate": 0.125
+      },
+      "8": {
+        "exact": 0.083,
+        "field_acc": 0.801,
+        "viol_rate": 0.167
+      },
+      "9": {
+        "exact": 0,
+        "field_acc": 0.796,
+        "viol_rate": 0.25
+      },
+      "10": {
+        "exact": 0.042,
+        "field_acc": 0.799,
+        "viol_rate": 0.208
+      },
+      "11": {
+        "exact": 0.042,
+        "field_acc": 0.793,
+        "viol_rate": 0.125
+      },
+      "12": {
+        "exact": 0.042,
+        "field_acc": 0.802,
+        "viol_rate": 0.125
+      },
+      "13": {
+        "exact": 0.042,
+        "field_acc": 0.804,
+        "viol_rate": 0.125
+      },
+      "14": {
+        "exact": 0.042,
+        "field_acc": 0.781,
+        "viol_rate": 0.125
+      },
+      "15": {
+        "exact": 0.042,
+        "field_acc": 0.79,
+        "viol_rate": 0.167
+      },
+      "16": {
+        "exact": 0.042,
+        "field_acc": 0.782,
+        "viol_rate": 0.167
+      },
+      "17": {
+        "exact": 0.042,
+        "field_acc": 0.79,
+        "viol_rate": 0.167
+      },
+      "18": {
+        "exact": 0.042,
+        "field_acc": 0.772,
+        "viol_rate": 0.167
+      },
+      "19": {
+        "exact": 0.042,
+        "field_acc": 0.769,
+        "viol_rate": 0.125
+      },
+      "20": {
+        "exact": 0.042,
+        "field_acc": 0.752,
+        "viol_rate": 0.208
+      },
+      "mean_first_violation_t": 9.78,
+      "frac_ever_violating": 0.375
+    },
+    "teacher_forced": {
+      "1": {
+        "exact": 0.75,
+        "field_acc": 0.968,
+        "viol_rate": 0
+      },
+      "2": {
+        "exact": 0.458,
+        "field_acc": 0.932,
+        "viol_rate": 0
+      },
+      "3": {
+        "exact": 0.5,
+        "field_acc": 0.946,
+        "viol_rate": 0.042
+      },
+      "4": {
+        "exact": 0.625,
+        "field_acc": 0.945,
+        "viol_rate": 0
+      },
+      "5": {
+        "exact": 0.667,
+        "field_acc": 0.957,
+        "viol_rate": 0.042
+      },
+      "6": {
+        "exact": 0.667,
+        "field_acc": 0.967,
+        "viol_rate": 0
+      },
+      "7": {
+        "exact": 0.417,
+        "field_acc": 0.936,
+        "viol_rate": 0.042
+      },
+      "8": {
+        "exact": 0.542,
+        "field_acc": 0.938,
+        "viol_rate": 0.125
+      },
+      "9": {
+        "exact": 0.458,
+        "field_acc": 0.938,
+        "viol_rate": 0.125
+      },
+      "10": {
+        "exact": 0.583,
+        "field_acc": 0.949,
+        "viol_rate": 0.042
+      },
+      "11": {
+        "exact": 0.583,
+        "field_acc": 0.93,
+        "viol_rate": 0.042
+      },
+      "12": {
+        "exact": 0.708,
+        "field_acc": 0.967,
+        "viol_rate": 0
+      },
+      "13": {
+        "exact": 0.625,
+        "field_acc": 0.946,
+        "viol_rate": 0.083
+      },
+      "14": {
+        "exact": 0.667,
+        "field_acc": 0.946,
+        "viol_rate": 0.042
+      },
+      "15": {
+        "exact": 0.542,
+        "field_acc": 0.94,
+        "viol_rate": 0.042
+      },
+      "16": {
+        "exact": 0.625,
+        "field_acc": 0.945,
+        "viol_rate": 0.083
+      },
+      "17": {
+        "exact": 0.333,
+        "field_acc": 0.913,
+        "viol_rate": 0.083
+      },
+      "18": {
+        "exact": 0.625,
+        "field_acc": 0.946,
+        "viol_rate": 0.125
+      },
+      "19": {
+        "exact": 0.667,
+        "field_acc": 0.952,
+        "viol_rate": 0.042
+      },
+      "20": {
+        "exact": 0.583,
+        "field_acc": 0.932,
+        "viol_rate": 0.125
+      },
+      "mean_first_violation_t": 10.1,
+      "frac_ever_violating": 0.417
+    }
+  },
+  "misleading": {
+    "free": {
+      "1": {
+        "exact": 0.5,
+        "field_acc": 0.931,
+        "viol_rate": 0
+      },
+      "2": {
+        "exact": 0.25,
+        "field_acc": 0.851,
+        "viol_rate": 0
+      },
+      "3": {
+        "exact": 0.208,
+        "field_acc": 0.83,
+        "viol_rate": 0.083
+      },
+      "4": {
+        "exact": 0.042,
+        "field_acc": 0.784,
+        "viol_rate": 0.083
+      },
+      "5": {
+        "exact": 0.042,
+        "field_acc": 0.778,
+        "viol_rate": 0.042
+      },
+      "6": {
+        "exact": 0,
+        "field_acc": 0.688,
+        "viol_rate": 0.083
+      },
+      "7": {
+        "exact": 0,
+        "field_acc": 0.705,
+        "viol_rate": 0.167
+      },
+      "8": {
+        "exact": 0,
+        "field_acc": 0.71,
+        "viol_rate": 0.042
+      },
+      "9": {
+        "exact": 0,
+        "field_acc": 0.69,
+        "viol_rate": 0.208
+      },
+      "10": {
+        "exact": 0,
+        "field_acc": 0.689,
+        "viol_rate": 0.167
+      },
+      "11": {
+        "exact": 0,
+        "field_acc": 0.681,
+        "viol_rate": 0.208
+      },
+      "12": {
+        "exact": 0,
+        "field_acc": 0.681,
+        "viol_rate": 0.167
+      },
+      "13": {
+        "exact": 0.042,
+        "field_acc": 0.669,
+        "viol_rate": 0.167
+      },
+      "14": {
+        "exact": 0,
+        "field_acc": 0.657,
+        "viol_rate": 0.167
+      },
+      "15": {
+        "exact": 0,
+        "field_acc": 0.642,
+        "viol_rate": 0.292
+      },
+      "16": {
+        "exact": 0,
+        "field_acc": 0.653,
+        "viol_rate": 0.292
+      },
+      "17": {
+        "exact": 0,
+        "field_acc": 0.659,
+        "viol_rate": 0.25
+      },
+      "18": {
+        "exact": 0,
+        "field_acc": 0.634,
+        "viol_rate": 0.25
+      },
+      "19": {
+        "exact": 0,
+        "field_acc": 0.621,
+        "viol_rate": 0.292
+      },
+      "20": {
+        "exact": 0,
+        "field_acc": 0.627,
+        "viol_rate": 0.292
+      },
+      "mean_first_violation_t": 8.7,
+      "frac_ever_violating": 0.417
+    },
+    "teacher_forced": {
+      "1": {
+        "exact": 0.5,
+        "field_acc": 0.931,
+        "viol_rate": 0
+      },
+      "2": {
+        "exact": 0.5,
+        "field_acc": 0.908,
+        "viol_rate": 0
+      },
+      "3": {
+        "exact": 0.417,
+        "field_acc": 0.909,
+        "viol_rate": 0.083
+      },
+      "4": {
+        "exact": 0.417,
+        "field_acc": 0.914,
+        "viol_rate": 0
+      },
+      "5": {
+        "exact": 0.417,
+        "field_acc": 0.904,
+        "viol_rate": 0.042
+      },
+      "6": {
+        "exact": 0.25,
+        "field_acc": 0.871,
+        "viol_rate": 0.042
+      },
+      "7": {
+        "exact": 0.542,
+        "field_acc": 0.912,
+        "viol_rate": 0.083
+      },
+      "8": {
+        "exact": 0.417,
+        "field_acc": 0.898,
+        "viol_rate": 0
+      },
+      "9": {
+        "exact": 0.292,
+        "field_acc": 0.869,
+        "viol_rate": 0.125
+      },
+      "10": {
+        "exact": 0.458,
+        "field_acc": 0.913,
+        "viol_rate": 0
+      },
+      "11": {
+        "exact": 0.292,
+        "field_acc": 0.908,
+        "viol_rate": 0.042
+      },
+      "12": {
+        "exact": 0.292,
+        "field_acc": 0.882,
+        "viol_rate": 0.042
+      },
+      "13": {
+        "exact": 0.292,
+        "field_acc": 0.903,
+        "viol_rate": 0.042
+      },
+      "14": {
+        "exact": 0.292,
+        "field_acc": 0.893,
+        "viol_rate": 0.042
+      },
+      "15": {
+        "exact": 0.25,
+        "field_acc": 0.866,
+        "viol_rate": 0.167
+      },
+      "16": {
+        "exact": 0.292,
+        "field_acc": 0.903,
+        "viol_rate": 0.083
+      },
+      "17": {
+        "exact": 0.333,
+        "field_acc": 0.861,
+        "viol_rate": 0.208
+      },
+      "18": {
+        "exact": 0.333,
+        "field_acc": 0.904,
+        "viol_rate": 0.083
+      },
+      "19": {
+        "exact": 0.208,
+        "field_acc": 0.857,
+        "viol_rate": 0.167
+      },
+      "20": {
+        "exact": 0.292,
+        "field_acc": 0.908,
+        "viol_rate": 0.125
+      },
+      "mean_first_violation_t": 11,
+      "frac_ever_violating": 0.458
+    }
+  },
+  "elapsed_sec": 225.1
+}

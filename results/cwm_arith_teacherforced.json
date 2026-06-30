@@ -1,0 +1,24 @@
+{
+  "model": "/home/t-nagupta/.cache/huggingface/hub/models--facebook--cwm/snapshots/1b572b04e7f9613bb8ea902fedff4a1ed887c573/",
+  "by_program": {
+    "long_arithmetic": {
+      "standard": {
+        "teacher": 0.726,
+        "student": 0.131,
+        "gap": 0.595,
+        "free_acc": 0.141,
+        "true_frames": 85,
+        "pred_frames": 85
+      },
+      "expanded": {
+        "teacher": 0.726,
+        "student": 0.131,
+        "gap": 0.595,
+        "free_acc": 0.141,
+        "true_frames": 85,
+        "pred_frames": 85
+      }
+    }
+  },
+  "elapsed_sec": 308.2
+}

@@ -1,0 +1,50 @@
+{
+  "tag": "base_tl_k3",
+  "app": "togglelist",
+  "steps": 8,
+  "per_step_ok": [
+    false,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    false
+  ],
+  "reground_k": 3,
+  "events": [
+    {
+      "type": "toggle",
+      "id": "item-4"
+    },
+    {
+      "type": "toggle",
+      "id": "item-0"
+    },
+    {
+      "type": "toggle",
+      "id": "item-4"
+    },
+    {
+      "type": "toggle",
+      "id": "item-1"
+    },
+    {
+      "type": "toggle",
+      "id": "item-0"
+    },
+    {
+      "type": "toggle",
+      "id": "item-0"
+    },
+    {
+      "type": "toggle",
+      "id": "item-3"
+    },
+    {
+      "type": "toggle",
+      "id": "item-3"
+    }
+  ]
+}

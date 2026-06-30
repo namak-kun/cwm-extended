@@ -1,0 +1,41 @@
+// TodoMVC ES5 model/controller transition logic, adapted from source/src/model.js,
+// source/src/store.js, and source/src/controller.js.
+function cloneTodos(todos) {
+  var out = [];
+  for (var i = 0; i < todos.length; i++) {
+    out.push({completed: !!todos[i].completed, id: todos[i].id, title: String(todos[i].title)});
+  }
+  return out;
+}
+function nextId(todos) {
+  var max = 0;
+  for (var i = 0; i < todos.length; i++) if (todos[i].id > max) max = todos[i].id;
+  return max + 1;
+}
+function dispatch(state, action) {
+  var next = {filter: state.filter || "all", todos: cloneTodos(state.todos || [])};
+  if (action.type === "add") {
+    var title = String(action.title || "").trim();
+    if (title !== "") next.todos.push({completed: false, id: nextId(next.todos), title: title});
+  } else if (action.type === "toggle") {
+    for (var i = 0; i < next.todos.length; i++) {
+      if (next.todos[i].id === action.id) next.todos[i].completed = !next.todos[i].completed;
+    }
+  } else if (action.type === "delete") {
+    next.todos = next.todos.filter(function (todo) { return todo.id !== action.id; });
+  } else if (action.type === "edit") {
+    var edited = String(action.title || "").trim();
+    if (edited !== "") {
+      for (var j = 0; j < next.todos.length; j++) if (next.todos[j].id === action.id) next.todos[j].title = edited;
+    } else {
+      next.todos = next.todos.filter(function (todo) { return todo.id !== action.id; });
+    }
+  } else if (action.type === "toggleAll") {
+    for (var k = 0; k < next.todos.length; k++) next.todos[k].completed = !!action.completed;
+  } else if (action.type === "clearCompleted") {
+    next.todos = next.todos.filter(function (todo) { return !todo.completed; });
+  } else if (action.type === "setFilter") {
+    if (action.filter === "all" || action.filter === "active" || action.filter === "completed") next.filter = action.filter;
+  }
+  return next;
+}

@@ -1,0 +1,69 @@
+{
+  "model": "facebook/cwm",
+  "lora": null,
+  "n": 80,
+  "files": [
+    "data/uitrans_vanilla.jsonl"
+  ],
+  "overall_exact": 0.75,
+  "overall_field_f1": 0.7583,
+  "n_unparsed": 1,
+  "by_target": {
+    "vanilla": {
+      "exact": 0.75,
+      "field_f1": 0.758,
+      "changed_field_acc": 0.75,
+      "delta_exact": 0.75,
+      "copy_field_f1": 0.64,
+      "n": 80
+    }
+  },
+  "fail_examples": {
+    "vanilla": [
+      {
+        "action": {
+          "field": "username",
+          "type": "input",
+          "value": ""
+        },
+        "f1": 0.0,
+        "pred": "{'message': 'Email is not valid', 'status': 'error'}",
+        "raw": "{'message': 'Email is not valid', 'status': 'error'}",
+        "truth": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Username must be at least 3 characters', '"
+      },
+      {
+        "action": {
+          "field": "username",
+          "type": "input",
+          "value": "Nora"
+        },
+        "f1": 0.0,
+        "pred": "Password must be at least 6 characters",
+        "raw": "'Password must be at least 6 characters'",
+        "truth": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Error message', 'status': 'success'}}, 'fi"
+      },
+      {
+        "action": {
+          "field": "email",
+          "type": "input",
+          "value": "not-email"
+        },
+        "f1": 0.0,
+        "pred": "{'message': 'Email is not valid', 'status': 'error'}",
+        "raw": "{'message': 'Email is not valid', 'status': 'error'}",
+        "truth": "{'controls': {'email': {'message': 'Email is not valid', 'status': 'error'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Username must be at least 3 characters', '"
+      },
+      {
+        "action": {
+          "field": "email",
+          "type": "input",
+          "value": "nora@example.com"
+        },
+        "f1": 0.0,
+        "pred": "error",
+        "raw": "'error'",
+        "truth": "{'controls': {'email': {'message': 'Error message', 'status': 'success'}, 'password': {'message': 'Password must be at least 6 characters', 'status': 'error'}, 'password2': {'message': 'Password2 is required', 'status': 'error'}, 'username': {'message': 'Username must be at least 3 characters', 'sta"
+      }
+    ]
+  }
+}

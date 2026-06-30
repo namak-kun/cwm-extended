@@ -1,0 +1,84 @@
+{
+  "model": "/home/t-nagupta/.cache/huggingface/hub/models--facebook--cwm/snapshots/1b572b04e7f9613bb8ea902fedff4a1ed887c573/",
+  "lora": null,
+  "results": {
+    "C_recursion_ptr_struct": {
+      "lang": "c",
+      "true": 28,
+      "cwm": 8,
+      "match": false,
+      "frames": 105
+    },
+    "C_bits_string": {
+      "lang": "c",
+      "true": 11,
+      "cwm": 11,
+      "match": true,
+      "frames": 18
+    },
+    "Cpp_vector_class": {
+      "lang": "cpp",
+      "true": 120,
+      "cwm": 204,
+      "match": false,
+      "frames": 10
+    },
+    "JS_loops": {
+      "lang": "js",
+      "true": 55,
+      "cwm": "None",
+      "match": false,
+      "frames": 20
+    },
+    "JS_map_reduce": {
+      "lang": "js",
+      "true": 30,
+      "cwm": 30,
+      "match": true,
+      "frames": 29
+    },
+    "Rust_iter": {
+      "lang": "rust",
+      "true": 30,
+      "cwm": 30,
+      "match": true,
+      "frames": 14
+    },
+    "Java_array": {
+      "lang": "java",
+      "true": 16,
+      "cwm": 16,
+      "match": true,
+      "frames": 12
+    },
+    "ML_matmul_pure": {
+      "lang": "py",
+      "true": 69,
+      "cwm": 69,
+      "match": true,
+      "frames": 35
+    },
+    "ML_nn_forward_pure": {
+      "lang": "py",
+      "true": 30,
+      "cwm": 30,
+      "match": true,
+      "frames": 22
+    },
+    "ML_grad_descent_pure": {
+      "lang": "py",
+      "true": 1233,
+      "cwm": null,
+      "match": false,
+      "frames": 39
+    },
+    "ML_numpy_matmul": {
+      "lang": "py",
+      "true": 69,
+      "cwm": 69,
+      "match": true,
+      "frames": 6
+    }
+  },
+  "elapsed_sec": 145.4
+}

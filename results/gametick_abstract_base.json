@@ -1,0 +1,264 @@
+{
+  "lora": null,
+  "n": 20,
+  "seed": 999,
+  "per_tick_state_acc": 0.0167,
+  "all_ticks_correct_rate": 0,
+  "mean_abstract_frames": 16.4,
+  "mean_full_frames": 157.2,
+  "mean_compression_x": 9.6,
+  "detail": [
+    {
+      "K": 5,
+      "T": 2,
+      "n_pred_ticks": 2,
+      "n_true_ticks": 2,
+      "per_tick_ok": [
+        false,
+        false
+      ],
+      "abstract_frames": 14,
+      "full_frames": 158
+    },
+    {
+      "K": 3,
+      "T": 3,
+      "n_pred_ticks": 3,
+      "n_true_ticks": 3,
+      "per_tick_ok": [
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 18,
+      "full_frames": 155
+    },
+    {
+      "K": 4,
+      "T": 2,
+      "n_pred_ticks": 2,
+      "n_true_ticks": 2,
+      "per_tick_ok": [
+        false,
+        false
+      ],
+      "abstract_frames": 14,
+      "full_frames": 134
+    },
+    {
+      "K": 3,
+      "T": 3,
+      "n_pred_ticks": 3,
+      "n_true_ticks": 3,
+      "per_tick_ok": [
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 18,
+      "full_frames": 166
+    },
+    {
+      "K": 5,
+      "T": 2,
+      "n_pred_ticks": 2,
+      "n_true_ticks": 2,
+      "per_tick_ok": [
+        false,
+        false
+      ],
+      "abstract_frames": 14,
+      "full_frames": 156
+    },
+    {
+      "K": 3,
+      "T": 3,
+      "n_pred_ticks": 3,
+      "n_true_ticks": 3,
+      "per_tick_ok": [
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 18,
+      "full_frames": 139
+    },
+    {
+      "K": 3,
+      "T": 2,
+      "n_pred_ticks": 2,
+      "n_true_ticks": 2,
+      "per_tick_ok": [
+        false,
+        false
+      ],
+      "abstract_frames": 14,
+      "full_frames": 110
+    },
+    {
+      "K": 5,
+      "T": 3,
+      "n_pred_ticks": 3,
+      "n_true_ticks": 3,
+      "per_tick_ok": [
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 18,
+      "full_frames": 232
+    },
+    {
+      "K": 4,
+      "T": 3,
+      "n_pred_ticks": 3,
+      "n_true_ticks": 3,
+      "per_tick_ok": [
+        true,
+        false,
+        false
+      ],
+      "abstract_frames": 18,
+      "full_frames": 183
+    },
+    {
+      "K": 5,
+      "T": 2,
+      "n_pred_ticks": 2,
+      "n_true_ticks": 2,
+      "per_tick_ok": [
+        false,
+        false
+      ],
+      "abstract_frames": 14,
+      "full_frames": 146
+    },
+    {
+      "K": 3,
+      "T": 3,
+      "n_pred_ticks": 3,
+      "n_true_ticks": 3,
+      "per_tick_ok": [
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 18,
+      "full_frames": 166
+    },
+    {
+      "K": 3,
+      "T": 2,
+      "n_pred_ticks": 2,
+      "n_true_ticks": 2,
+      "per_tick_ok": [
+        false,
+        false
+      ],
+      "abstract_frames": 14,
+      "full_frames": 109
+    },
+    {
+      "K": 3,
+      "T": 3,
+      "n_pred_ticks": 3,
+      "n_true_ticks": 3,
+      "per_tick_ok": [
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 18,
+      "full_frames": 164
+    },
+    {
+      "K": 3,
+      "T": 2,
+      "n_pred_ticks": 2,
+      "n_true_ticks": 2,
+      "per_tick_ok": [
+        false,
+        false
+      ],
+      "abstract_frames": 14,
+      "full_frames": 111
+    },
+    {
+      "K": 3,
+      "T": 3,
+      "n_pred_ticks": 3,
+      "n_true_ticks": 3,
+      "per_tick_ok": [
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 18,
+      "full_frames": 164
+    },
+    {
+      "K": 4,
+      "T": 3,
+      "n_pred_ticks": 3,
+      "n_true_ticks": 3,
+      "per_tick_ok": [
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 18,
+      "full_frames": 182
+    },
+    {
+      "K": 4,
+      "T": 3,
+      "n_pred_ticks": 3,
+      "n_true_ticks": 3,
+      "per_tick_ok": [
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 18,
+      "full_frames": 196
+    },
+    {
+      "K": 3,
+      "T": 3,
+      "n_pred_ticks": 3,
+      "n_true_ticks": 3,
+      "per_tick_ok": [
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 18,
+      "full_frames": 163
+    },
+    {
+      "K": 5,
+      "T": 2,
+      "n_pred_ticks": 2,
+      "n_true_ticks": 2,
+      "per_tick_ok": [
+        false,
+        false
+      ],
+      "abstract_frames": 14,
+      "full_frames": 159
+    },
+    {
+      "K": 3,
+      "T": 3,
+      "n_pred_ticks": 3,
+      "n_true_ticks": 3,
+      "per_tick_ok": [
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 18,
+      "full_frames": 151
+    }
+  ]
+}

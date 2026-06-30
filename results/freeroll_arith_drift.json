@@ -1,0 +1,19 @@
+{
+  "bucket": "arithmetic",
+  "n": 20,
+  "seed": 999,
+  "by_adapter": {
+    "base": {
+      "free_roll_frame_acc": 0.1869,
+      "fully_correct_rollout_rate": 0.0,
+      "per_prog_min": 0.114,
+      "per_prog_max": 0.281
+    },
+    "adapters/cwm_arith_drift": {
+      "free_roll_frame_acc": 0.1795,
+      "fully_correct_rollout_rate": 0.0,
+      "per_prog_min": 0.114,
+      "per_prog_max": 0.281
+    }
+  }
+}

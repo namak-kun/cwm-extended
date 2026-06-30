@@ -1,0 +1,40 @@
+{
+  "model": "vllm:Qwen2.5-Coder-14B-Instruct",
+  "n_games": 25,
+  "horizon": 10,
+  "levels": {
+    "1": {
+      "exact": 0.508,
+      "field_acc": 0.928,
+      "n": 250,
+      "avg_code_lines": 50.4,
+      "avg_actions": 4,
+      "avg_grid": 42.9
+    },
+    "2": {
+      "exact": 0.552,
+      "field_acc": 0.95,
+      "n": 250,
+      "avg_code_lines": 60.0,
+      "avg_actions": 5,
+      "avg_grid": 72.5
+    },
+    "3": {
+      "exact": 0.4,
+      "field_acc": 0.937,
+      "n": 250,
+      "avg_code_lines": 73.2,
+      "avg_actions": 6,
+      "avg_grid": 102.6
+    },
+    "4": {
+      "exact": 0.216,
+      "field_acc": 0.923,
+      "n": 250,
+      "avg_code_lines": 88.6,
+      "avg_actions": 7,
+      "avg_grid": 152.3
+    }
+  },
+  "elapsed_sec": 77.9
+}

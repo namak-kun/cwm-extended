@@ -1,0 +1,31 @@
+# --- Python / venvs (regenerable from requirements*.txt) ---
+.venv/
+.venv_vllm/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# --- Trained LoRA adapters (large; 477MB/shard -> exceeds GitHub 100MB limit) ---
+# Hosted separately (see README "Trained adapters"). Keep adapter_config.json refs only.
+adapters/
+
+# --- Model weights / HF cache ---
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+hf_cache/
+.cache/
+
+# --- JS deps (regenerable: `cd jsdeps && npm install`) ---
+jsdeps/node_modules/
+
+# --- Run logs / scratch ---
+logs/
+nohup.out
+results/_*          # temp/scratch result dirs (results/_tv_test etc.)
+
+# --- OS / editor ---
+.DS_Store
+*.swp

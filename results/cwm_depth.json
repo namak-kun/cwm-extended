@@ -1,0 +1,75 @@
+{
+  "model": "/home/t-nagupta/.cache/huggingface/hub/models--facebook--cwm/snapshots/1b572b04e7f9613bb8ea902fedff4a1ed887c573/",
+  "teacher_forced": {
+    "counter_N40": {
+      "n_frames": 167,
+      "first_value_fail_depth": null,
+      "frame_acc_overall": 1,
+      "ctrl_acc_overall": 1,
+      "frame_acc_by_band": {
+        "1-10": 1,
+        "11-25": 1,
+        "26-50": 1,
+        "51-100": 1,
+        "101-200": 1
+      }
+    },
+    "grid_N30": {
+      "n_frames": 247,
+      "first_value_fail_depth": null,
+      "frame_acc_overall": 1,
+      "ctrl_acc_overall": 1,
+      "frame_acc_by_band": {
+        "1-10": 1,
+        "11-25": 1,
+        "26-50": 1,
+        "51-100": 1,
+        "101-200": 1,
+        "201-+": 1
+      }
+    },
+    "list_N40": {
+      "n_frames": 189,
+      "first_value_fail_depth": null,
+      "frame_acc_overall": 1,
+      "ctrl_acc_overall": 1,
+      "frame_acc_by_band": {
+        "1-10": 1,
+        "11-25": 1,
+        "26-50": 1,
+        "51-100": 1,
+        "101-200": 1
+      }
+    }
+  },
+  "free_rollout": {
+    "counter_N12": {
+      "n_gt": 55,
+      "n_pred": 55,
+      "n_compared": 55,
+      "first_divergence_frame": 55,
+      "fully_correct": true,
+      "control_acc": 1.0,
+      "frame_acc": 1.0
+    },
+    "grid_N12": {
+      "n_gt": 106,
+      "n_pred": 106,
+      "n_compared": 106,
+      "first_divergence_frame": 106,
+      "fully_correct": true,
+      "control_acc": 1.0,
+      "frame_acc": 1.0
+    },
+    "list_N12": {
+      "n_gt": 58,
+      "n_pred": 58,
+      "n_compared": 58,
+      "first_divergence_frame": 58,
+      "fully_correct": true,
+      "control_acc": 1.0,
+      "frame_acc": 1.0
+    }
+  },
+  "elapsed_sec": 281.0
+}

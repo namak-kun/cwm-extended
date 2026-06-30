@@ -1,0 +1,51 @@
+{
+  "lora": "adapters/cwm_fdm_idm_r1",
+  "n": 120,
+  "seed": 999,
+  "overall": {
+    "true_acc": 0.8083,
+    "swap_acc": 0.0,
+    "true_minus_swap": 0.8083,
+    "pred_diversity": 4,
+    "gt_diversity": 4,
+    "track_acc": 0.7479
+  },
+  "action_separable": {
+    "n": 120,
+    "true_acc": 0.8083,
+    "swap_acc": 0.0,
+    "true_minus_swap": 0.8083,
+    "pred_diversity": 4
+  },
+  "action_insensitive": {
+    "n": 0,
+    "true_acc": null,
+    "swap_acc": null
+  },
+  "by_event": {
+    "contact": {
+      "n": 61,
+      "true_acc": 0.754,
+      "swap_acc": 0.0,
+      "pred_div": 4
+    },
+    "move_only": {
+      "n": 49,
+      "true_acc": 0.837,
+      "swap_acc": 0.0,
+      "pred_div": 4
+    },
+    "stomp": {
+      "n": 16,
+      "true_acc": 0.812,
+      "swap_acc": 0.0,
+      "pred_div": 4
+    },
+    "death": {
+      "n": 16,
+      "true_acc": 0.812,
+      "swap_acc": 0.0,
+      "pred_div": 4
+    }
+  }
+}

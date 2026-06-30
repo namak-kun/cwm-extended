@@ -1,0 +1,246 @@
+{
+  "lora": "adapters/cwm_gametick_stepover",
+  "n": 24,
+  "seed": 777,
+  "action_recovery_acc": 0.4167,
+  "unique_recovery_acc": 0.4167,
+  "fdm_ranks_true_acc": 1,
+  "detail": [
+    {
+      "a_true": "U",
+      "true_set": [
+        "U"
+      ],
+      "cwm_matched": [],
+      "cwm_rank_best": "U",
+      "best_dist": 1
+    },
+    {
+      "a_true": "R",
+      "true_set": [
+        "R"
+      ],
+      "cwm_matched": [],
+      "cwm_rank_best": "R",
+      "best_dist": 1
+    },
+    {
+      "a_true": "R",
+      "true_set": [
+        "R"
+      ],
+      "cwm_matched": [],
+      "cwm_rank_best": "R",
+      "best_dist": 1
+    },
+    {
+      "a_true": "L",
+      "true_set": [
+        "L"
+      ],
+      "cwm_matched": [
+        "L"
+      ],
+      "cwm_rank_best": "L",
+      "best_dist": 0
+    },
+    {
+      "a_true": "L",
+      "true_set": [
+        "L"
+      ],
+      "cwm_matched": [
+        "L"
+      ],
+      "cwm_rank_best": "L",
+      "best_dist": 0
+    },
+    {
+      "a_true": "L",
+      "true_set": [
+        "L"
+      ],
+      "cwm_matched": [],
+      "cwm_rank_best": "L",
+      "best_dist": 3
+    },
+    {
+      "a_true": "R",
+      "true_set": [
+        "R"
+      ],
+      "cwm_matched": [
+        "R"
+      ],
+      "cwm_rank_best": "R",
+      "best_dist": 0
+    },
+    {
+      "a_true": "U",
+      "true_set": [
+        "U"
+      ],
+      "cwm_matched": [],
+      "cwm_rank_best": "U",
+      "best_dist": 2
+    },
+    {
+      "a_true": "R",
+      "true_set": [
+        "R"
+      ],
+      "cwm_matched": [],
+      "cwm_rank_best": "R",
+      "best_dist": 1
+    },
+    {
+      "a_true": "U",
+      "true_set": [
+        "U"
+      ],
+      "cwm_matched": [
+        "U"
+      ],
+      "cwm_rank_best": "U",
+      "best_dist": 0
+    },
+    {
+      "a_true": "D",
+      "true_set": [
+        "D"
+      ],
+      "cwm_matched": [
+        "D"
+      ],
+      "cwm_rank_best": "D",
+      "best_dist": 0
+    },
+    {
+      "a_true": "R",
+      "true_set": [
+        "R"
+      ],
+      "cwm_matched": [
+        "R"
+      ],
+      "cwm_rank_best": "R",
+      "best_dist": 0
+    },
+    {
+      "a_true": "U",
+      "true_set": [
+        "U"
+      ],
+      "cwm_matched": [],
+      "cwm_rank_best": "U",
+      "best_dist": 1
+    },
+    {
+      "a_true": "U",
+      "true_set": [
+        "U"
+      ],
+      "cwm_matched": [],
+      "cwm_rank_best": "U",
+      "best_dist": 1
+    },
+    {
+      "a_true": "U",
+      "true_set": [
+        "U"
+      ],
+      "cwm_matched": [],
+      "cwm_rank_best": "U",
+      "best_dist": 2
+    },
+    {
+      "a_true": "R",
+      "true_set": [
+        "R"
+      ],
+      "cwm_matched": [],
+      "cwm_rank_best": "R",
+      "best_dist": 1
+    },
+    {
+      "a_true": "R",
+      "true_set": [
+        "R"
+      ],
+      "cwm_matched": [],
+      "cwm_rank_best": "R",
+      "best_dist": 1
+    },
+    {
+      "a_true": "U",
+      "true_set": [
+        "U"
+      ],
+      "cwm_matched": [
+        "U"
+      ],
+      "cwm_rank_best": "U",
+      "best_dist": 0
+    },
+    {
+      "a_true": "R",
+      "true_set": [
+        "R"
+      ],
+      "cwm_matched": [],
+      "cwm_rank_best": "R",
+      "best_dist": 1
+    },
+    {
+      "a_true": "L",
+      "true_set": [
+        "L"
+      ],
+      "cwm_matched": [],
+      "cwm_rank_best": "L",
+      "best_dist": 1
+    },
+    {
+      "a_true": "U",
+      "true_set": [
+        "U"
+      ],
+      "cwm_matched": [
+        "U"
+      ],
+      "cwm_rank_best": "U",
+      "best_dist": 0
+    },
+    {
+      "a_true": "U",
+      "true_set": [
+        "U"
+      ],
+      "cwm_matched": [],
+      "cwm_rank_best": "U",
+      "best_dist": 1
+    },
+    {
+      "a_true": "R",
+      "true_set": [
+        "R"
+      ],
+      "cwm_matched": [
+        "R"
+      ],
+      "cwm_rank_best": "R",
+      "best_dist": 0
+    },
+    {
+      "a_true": "R",
+      "true_set": [
+        "R"
+      ],
+      "cwm_matched": [
+        "R"
+      ],
+      "cwm_rank_best": "R",
+      "best_dist": 0
+    }
+  ]
+}

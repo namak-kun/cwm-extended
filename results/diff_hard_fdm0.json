@@ -1,0 +1,462 @@
+{
+  "lora": "adapters/cwm_gametick_stepover",
+  "n": 30,
+  "seed": 999,
+  "per_tick_state_acc": 0.1172,
+  "all_ticks_correct_rate": 0,
+  "mean_abstract_frames": 26,
+  "mean_full_frames": 465.1,
+  "mean_compression_x": 17.8,
+  "detail": [
+    {
+      "K": 8,
+      "T": 4,
+      "n_pred_ticks": 4,
+      "n_true_ticks": 4,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 22,
+      "full_frames": 459
+    },
+    {
+      "K": 8,
+      "T": 5,
+      "n_pred_ticks": 5,
+      "n_true_ticks": 5,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 26,
+      "full_frames": 570
+    },
+    {
+      "K": 6,
+      "T": 6,
+      "n_pred_ticks": 6,
+      "n_true_ticks": 6,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 30,
+      "full_frames": 498
+    },
+    {
+      "K": 6,
+      "T": 5,
+      "n_pred_ticks": 5,
+      "n_true_ticks": 5,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 26,
+      "full_frames": 457
+    },
+    {
+      "K": 7,
+      "T": 4,
+      "n_pred_ticks": 4,
+      "n_true_ticks": 4,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 22,
+      "full_frames": 377
+    },
+    {
+      "K": 6,
+      "T": 4,
+      "n_pred_ticks": 4,
+      "n_true_ticks": 4,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 22,
+      "full_frames": 347
+    },
+    {
+      "K": 7,
+      "T": 4,
+      "n_pred_ticks": 4,
+      "n_true_ticks": 4,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 22,
+      "full_frames": 397
+    },
+    {
+      "K": 6,
+      "T": 6,
+      "n_pred_ticks": 6,
+      "n_true_ticks": 6,
+      "per_tick_ok": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 30,
+      "full_frames": 448
+    },
+    {
+      "K": 6,
+      "T": 4,
+      "n_pred_ticks": 4,
+      "n_true_ticks": 4,
+      "per_tick_ok": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "abstract_frames": 22,
+      "full_frames": 339
+    },
+    {
+      "K": 6,
+      "T": 5,
+      "n_pred_ticks": 5,
+      "n_true_ticks": 5,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 26,
+      "full_frames": 379
+    },
+    {
+      "K": 6,
+      "T": 6,
+      "n_pred_ticks": 6,
+      "n_true_ticks": 6,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 30,
+      "full_frames": 547
+    },
+    {
+      "K": 7,
+      "T": 6,
+      "n_pred_ticks": 6,
+      "n_true_ticks": 6,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 30,
+      "full_frames": 514
+    },
+    {
+      "K": 8,
+      "T": 6,
+      "n_pred_ticks": 6,
+      "n_true_ticks": 6,
+      "per_tick_ok": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 30,
+      "full_frames": 651
+    },
+    {
+      "K": 8,
+      "T": 6,
+      "n_pred_ticks": 6,
+      "n_true_ticks": 6,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 30,
+      "full_frames": 619
+    },
+    {
+      "K": 6,
+      "T": 5,
+      "n_pred_ticks": 5,
+      "n_true_ticks": 5,
+      "per_tick_ok": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 26,
+      "full_frames": 463
+    },
+    {
+      "K": 7,
+      "T": 4,
+      "n_pred_ticks": 4,
+      "n_true_ticks": 4,
+      "per_tick_ok": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 22,
+      "full_frames": 394
+    },
+    {
+      "K": 7,
+      "T": 6,
+      "n_pred_ticks": 6,
+      "n_true_ticks": 6,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 30,
+      "full_frames": 539
+    },
+    {
+      "K": 7,
+      "T": 6,
+      "n_pred_ticks": 6,
+      "n_true_ticks": 6,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 30,
+      "full_frames": 620
+    },
+    {
+      "K": 7,
+      "T": 4,
+      "n_pred_ticks": 4,
+      "n_true_ticks": 4,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 22,
+      "full_frames": 371
+    },
+    {
+      "K": 8,
+      "T": 6,
+      "n_pred_ticks": 6,
+      "n_true_ticks": 6,
+      "per_tick_ok": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 30,
+      "full_frames": 638
+    },
+    {
+      "K": 7,
+      "T": 5,
+      "n_pred_ticks": 5,
+      "n_true_ticks": 5,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 26,
+      "full_frames": 467
+    },
+    {
+      "K": 8,
+      "T": 4,
+      "n_pred_ticks": 4,
+      "n_true_ticks": 4,
+      "per_tick_ok": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 22,
+      "full_frames": 442
+    },
+    {
+      "K": 7,
+      "T": 5,
+      "n_pred_ticks": 5,
+      "n_true_ticks": 5,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 26,
+      "full_frames": 492
+    },
+    {
+      "K": 7,
+      "T": 6,
+      "n_pred_ticks": 6,
+      "n_true_ticks": 6,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 30,
+      "full_frames": 535
+    },
+    {
+      "K": 6,
+      "T": 4,
+      "n_pred_ticks": 4,
+      "n_true_ticks": 4,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 22,
+      "full_frames": 327
+    },
+    {
+      "K": 6,
+      "T": 5,
+      "n_pred_ticks": 5,
+      "n_true_ticks": 5,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 26,
+      "full_frames": 402
+    },
+    {
+      "K": 6,
+      "T": 4,
+      "n_pred_ticks": 4,
+      "n_true_ticks": 4,
+      "per_tick_ok": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "abstract_frames": 22,
+      "full_frames": 356
+    },
+    {
+      "K": 6,
+      "T": 6,
+      "n_pred_ticks": 6,
+      "n_true_ticks": 6,
+      "per_tick_ok": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 30,
+      "full_frames": 470
+    },
+    {
+      "K": 8,
+      "T": 5,
+      "n_pred_ticks": 5,
+      "n_true_ticks": 5,
+      "per_tick_ok": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 26,
+      "full_frames": 532
+    },
+    {
+      "K": 6,
+      "T": 4,
+      "n_pred_ticks": 4,
+      "n_true_ticks": 4,
+      "per_tick_ok": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "abstract_frames": 22,
+      "full_frames": 302
+    }
+  ]
+}

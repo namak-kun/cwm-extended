@@ -1,0 +1,42 @@
+{
+  "model": "/home/t-nagupta/.cache/huggingface/hub/models--facebook--cwm/snapshots/1b572b04e7f9613bb8ea902fedff4a1ed887c573/",
+  "by_program": {
+    "oop_encapsulation": {
+      "standard": {
+        "teacher": 0.949,
+        "student": 0.017,
+        "gap": 0.932,
+        "free_acc": 0.033,
+        "true_frames": 60,
+        "pred_frames": 60
+      },
+      "expanded": {
+        "teacher": 0.797,
+        "student": 0.017,
+        "gap": 0.78,
+        "free_acc": 0.033,
+        "true_frames": 60,
+        "pred_frames": 60
+      }
+    },
+    "multientity_sideeffect": {
+      "standard": {
+        "teacher": 0.994,
+        "student": 1,
+        "gap": -0.006,
+        "free_acc": 0.995,
+        "true_frames": 205,
+        "pred_frames": 189
+      },
+      "expanded": {
+        "teacher": 0.994,
+        "student": 1,
+        "gap": -0.006,
+        "free_acc": 0.995,
+        "true_frames": 205,
+        "pred_frames": 189
+      }
+    }
+  },
+  "elapsed_sec": 1418.9
+}

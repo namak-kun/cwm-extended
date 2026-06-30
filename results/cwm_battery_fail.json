@@ -1,0 +1,34 @@
+{
+  "model": "/home/t-nagupta/.cache/huggingface/hub/models--facebook--cwm/snapshots/1b572b04e7f9613bb8ea902fedff4a1ed887c573/",
+  "results": {
+    "C_recursion_ptr_struct": {
+      "lang": "c",
+      "true": 28,
+      "cwm": 8,
+      "match": false,
+      "frames": 102
+    },
+    "Cpp_vector_class": {
+      "lang": "cpp",
+      "true": 120,
+      "cwm": 204,
+      "match": false,
+      "frames": 10
+    },
+    "JS_loops": {
+      "lang": "js",
+      "true": 55,
+      "cwm": "None",
+      "match": false,
+      "frames": 20
+    },
+    "ML_grad_descent_pure": {
+      "lang": "py",
+      "true": 1233,
+      "cwm": null,
+      "match": false,
+      "frames": 39
+    }
+  },
+  "elapsed_sec": 136.5
+}

@@ -1,0 +1,18 @@
+{
+  "model": "vllm:Qwen2.5-Coder-14B-Instruct",
+  "n_spawn_steps": 438,
+  "k_samples": 6,
+  "REVEALED": {
+    "exact": 0.313,
+    "field_acc": 0.972
+  },
+  "HIDDEN_greedy": {
+    "exact": 0.05,
+    "deterministic_field_acc": 0.951
+  },
+  "HIDDEN_sampled": {
+    "reachable_set_coverage_full": 0.32,
+    "reachable_set_coverage_items": 0.432
+  },
+  "elapsed_sec": 257.8
+}

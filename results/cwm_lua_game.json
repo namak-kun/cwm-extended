@@ -1,0 +1,9 @@
+{
+  "arena_true": 37,
+  "arena_cwm": "None",
+  "match": false,
+  "frames": 217,
+  "love2d_a5_returncode": 1,
+  "love2d_a5_msg": "lua5.4: /tmp/tmp86_jmish/l.lua:1: attempt to index a nil value (global 'love')\nstack traceback:\n\t/tmp/tmp86_jmish/l.lua:1: in main chunk\n\t[C",
+  "elapsed_sec": 1017.2
+}

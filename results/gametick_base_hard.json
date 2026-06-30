@@ -1,0 +1,232 @@
+{
+  "lora": null,
+  "n": 12,
+  "seed": 999,
+  "outcome_acc": 1,
+  "frame_acc": 1.0,
+  "len_ok_rate": 1,
+  "component_acc": {
+    "hp": 1,
+    "score": 1,
+    "x": 1,
+    "y": 1
+  },
+  "detail": [
+    {
+      "truth": {
+        "hp": 7,
+        "score": 10,
+        "x": 4,
+        "y": 6
+      },
+      "cwm": {
+        "hp": 7,
+        "score": 10,
+        "x": 4,
+        "y": 6
+      },
+      "outcome_ok": true,
+      "frame_acc": 1.0,
+      "n_gt": 272,
+      "n_pred": 272
+    },
+    {
+      "truth": {
+        "hp": 7,
+        "score": 0,
+        "x": 3,
+        "y": 5
+      },
+      "cwm": {
+        "hp": 7,
+        "score": 0,
+        "x": 3,
+        "y": 5
+      },
+      "outcome_ok": true,
+      "frame_acc": 1.0,
+      "n_gt": 279,
+      "n_pred": 279
+    },
+    {
+      "truth": {
+        "hp": 4,
+        "score": 0,
+        "x": 5,
+        "y": 5
+      },
+      "cwm": {
+        "hp": 4,
+        "score": 0,
+        "x": 5,
+        "y": 5
+      },
+      "outcome_ok": true,
+      "frame_acc": 1.0,
+      "n_gt": 283,
+      "n_pred": 283
+    },
+    {
+      "truth": {
+        "hp": 8,
+        "score": 0,
+        "x": 4,
+        "y": 4
+      },
+      "cwm": {
+        "hp": 8,
+        "score": 0,
+        "x": 4,
+        "y": 4
+      },
+      "outcome_ok": true,
+      "frame_acc": 1.0,
+      "n_gt": 276,
+      "n_pred": 276
+    },
+    {
+      "truth": {
+        "hp": 8,
+        "score": 10,
+        "x": 4,
+        "y": 2
+      },
+      "cwm": {
+        "hp": 8,
+        "score": 10,
+        "x": 4,
+        "y": 2
+      },
+      "outcome_ok": true,
+      "frame_acc": 1.0,
+      "n_gt": 269,
+      "n_pred": 269
+    },
+    {
+      "truth": {
+        "hp": 7,
+        "score": 20,
+        "x": 4,
+        "y": 2
+      },
+      "cwm": {
+        "hp": 7,
+        "score": 20,
+        "x": 4,
+        "y": 2
+      },
+      "outcome_ok": true,
+      "frame_acc": 1.0,
+      "n_gt": 264,
+      "n_pred": 264
+    },
+    {
+      "truth": {
+        "hp": 5,
+        "score": 20,
+        "x": 4,
+        "y": 4
+      },
+      "cwm": {
+        "hp": 5,
+        "score": 20,
+        "x": 4,
+        "y": 4
+      },
+      "outcome_ok": true,
+      "frame_acc": 1.0,
+      "n_gt": 267,
+      "n_pred": 267
+    },
+    {
+      "truth": {
+        "hp": 7,
+        "score": 0,
+        "x": 3,
+        "y": 5
+      },
+      "cwm": {
+        "hp": 7,
+        "score": 0,
+        "x": 3,
+        "y": 5
+      },
+      "outcome_ok": true,
+      "frame_acc": 1.0,
+      "n_gt": 279,
+      "n_pred": 279
+    },
+    {
+      "truth": {
+        "hp": 7,
+        "score": 10,
+        "x": 5,
+        "y": 3
+      },
+      "cwm": {
+        "hp": 7,
+        "score": 10,
+        "x": 5,
+        "y": 3
+      },
+      "outcome_ok": true,
+      "frame_acc": 1.0,
+      "n_gt": 273,
+      "n_pred": 273
+    },
+    {
+      "truth": {
+        "hp": 7,
+        "score": 20,
+        "x": 4,
+        "y": 4
+      },
+      "cwm": {
+        "hp": 7,
+        "score": 20,
+        "x": 4,
+        "y": 4
+      },
+      "outcome_ok": true,
+      "frame_acc": 1.0,
+      "n_gt": 269,
+      "n_pred": 269
+    },
+    {
+      "truth": {
+        "hp": 5,
+        "score": 10,
+        "x": 5,
+        "y": 5
+      },
+      "cwm": {
+        "hp": 5,
+        "score": 10,
+        "x": 5,
+        "y": 5
+      },
+      "outcome_ok": true,
+      "frame_acc": 1.0,
+      "n_gt": 276,
+      "n_pred": 276
+    },
+    {
+      "truth": {
+        "hp": 7,
+        "score": 0,
+        "x": 5,
+        "y": 3
+      },
+      "cwm": {
+        "hp": 7,
+        "score": 0,
+        "x": 5,
+        "y": 3
+      },
+      "outcome_ok": true,
+      "frame_acc": 1.0,
+      "n_gt": 279,
+      "n_pred": 279
+    }
+  ]
+}
