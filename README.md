@@ -108,6 +108,9 @@ Hugging Face Hub:
 
 **🤗 [`nmk-kun/cwm-extended-adapters`](https://huggingface.co/nmk-kun/cwm-extended-adapters)**
 
+See **[`ADAPTERS.md`](ADAPTERS.md)** for a full per-adapter catalogue (what each of the 15 teaches, its
+result, and the `results/REPORT.md` section behind it).
+
 ```python
 from peft import PeftModel
 from transformers import AutoModelForCausalLM
