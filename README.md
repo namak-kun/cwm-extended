@@ -11,7 +11,8 @@ Research code that extends Meta's **[Code World Model (CWM)](https://github.com/
 
 This repo is the experiment harness, the trained adapters' recipes, the pixel-rendering pipeline, and a
 detailed empirical record. **The master record is [`results/REPORT.md`](results/REPORT.md)** (§0–§39) — read
-its TL;DR first.
+its TL;DR first. For a paper-style synthesis, see **[`ACADEMIC_WRITEUP.md`](ACADEMIC_WRITEUP.md)** (full
+methods/results/analysis); an earlier game-flywheel-focused summary is in [`WRITEUP.md`](WRITEUP.md).
 
 ---
 
